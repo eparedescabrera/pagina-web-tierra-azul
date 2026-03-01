@@ -493,7 +493,7 @@
                   src="assets/sandia.jpeg"
                   alt="Sandía Tierra Azul"
                   class="img-fluid mb-3"
-                />
+                 loading="lazy" decoding="async" />
                 <h3
                   data-es="Sandía Tierra Azul"
                   data-en="Tierra Azul Watermelon"
@@ -645,18 +645,16 @@
     </footer>
 
     <!-- JS LIBRERÍAS -->
-    <script
-      src="https://kit.fontawesome.com/739c16c71e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/header.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="js/header.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({ once: true });
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.AOS) AOS.init({ once: true });
+      });
     </script>
 
     <!-- 🔵 Traducción -->
-    <script src="js/translate.js"></script>
+    <script defer src="js/translate.js"></script>
   </body>
 </html>

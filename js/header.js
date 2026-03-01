@@ -8,6 +8,9 @@
   const navClose = document.getElementById("navClose");
   const navBackdrop = document.getElementById("navBackdrop");
 
+  const mobileSubmenus = [...document.querySelectorAll(".nav2__mSub")];
+  const mobileSubmenuButtons = [...document.querySelectorAll(".nav2__mDrop")];
+
   const openNav = () => {
     body.classList.add("nav-open");
     navToggle?.setAttribute("aria-expanded", "true");
@@ -18,8 +21,12 @@
     navToggle?.setAttribute("aria-expanded", "false");
 
     // Cerrar submenús del panel móvil
-    document.querySelectorAll(".nav2__mSub").forEach(sub => (sub.style.display = "none"));
-    document.querySelectorAll(".nav2__mDrop").forEach(btn => btn.setAttribute("aria-expanded", "false"));
+    mobileSubmenus.forEach(sub => {
+      sub.style.display = "none";
+    });
+    mobileSubmenuButtons.forEach(btn => {
+      btn.setAttribute("aria-expanded", "false");
+    });
   };
 
   navToggle?.addEventListener("click", openNav);
@@ -48,14 +55,30 @@
   const setBodyOffset = () => {
     if (!header) return;
     const h = header.offsetHeight; // incluye nav flotante
-    document.documentElement.style.setProperty("--header-sticky-h", h + "px");
+    document.documentElement.style.setProperty("--header-sticky-h", `${h}px`);
   };
 
   const onScroll = () => {
     if (!header) return;
     const isSticky = window.scrollY > 10;
     header.classList.toggle("is-sticky", isSticky);
-    document.body.classList.toggle("has-sticky", isSticky);
+    body.classList.toggle("has-sticky", isSticky);
+  };
+
+  let resizeRafId = 0;
+  const onResize = () => {
+    if (resizeRafId) cancelAnimationFrame(resizeRafId);
+
+    resizeRafId = requestAnimationFrame(() => {
+      setBodyOffset();
+      onScroll();
+
+      if (window.innerWidth > 900) {
+        closeNav();
+      } else {
+        closeDesktopNosotros();
+      }
+    });
   };
 
   // init sticky
@@ -63,10 +86,7 @@
   onScroll();
 
   window.addEventListener("scroll", onScroll, { passive: true });
-  window.addEventListener("resize", () => {
-    setBodyOffset();
-    onScroll();
-  });
+  window.addEventListener("resize", onResize, { passive: true });
 
   // ======================================================
   // SUBMENÚ DESKTOP (NOSOTROS) - hover estable + click opcional
@@ -131,29 +151,49 @@
     }
   });
 
-  // Resize: si pasa a desktop, cierra panel; si pasa a móvil, cierra submenu desktop
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 900) closeNav();
-    else closeDesktopNosotros();
-  });
-
   // ======================================================
   // ✅ ACTIVE LINK AUTOMÁTICO (desktop + mobile)
   // ======================================================
   const current = (location.pathname.split("/").pop() || "index.html").toLowerCase();
 
   // Desktop links
-  document.querySelectorAll(".nav2__link").forEach(a => {
+  document.querySelectorAll(".nav2__link").forEach((a) => {
     a.classList.remove("active");
     const href = (a.getAttribute("href") || "").split("/").pop().toLowerCase();
     if (href && href === current) a.classList.add("active");
   });
 
   // Mobile links
-  document.querySelectorAll(".nav2__mLink").forEach(a => {
+  document.querySelectorAll(".nav2__mLink").forEach((a) => {
     a.classList.remove("active");
     const href = (a.getAttribute("href") || "").split("/").pop().toLowerCase();
     if (href && href === current) a.classList.add("active");
   });
 
+  // ======================================================
+  // UX: BOTÓN "VOLVER ARRIBA"
+  // ======================================================
+  const backToTopBtn = document.createElement("button");
+  backToTopBtn.type = "button";
+  backToTopBtn.className = "ux-backtotop";
+  backToTopBtn.setAttribute("aria-label", "Volver arriba");
+  backToTopBtn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
+  document.body.appendChild(backToTopBtn);
+
+  const toggleBackToTop = () => {
+    const shouldShow = window.scrollY > 420;
+    backToTopBtn.classList.toggle("is-visible", shouldShow);
+  };
+
+  backToTopBtn.addEventListener("click", () => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    window.scrollTo({
+      top: 0,
+      behavior: reduceMotion ? "auto" : "smooth",
+    });
+  });
+
+  window.addEventListener("scroll", toggleBackToTop, { passive: true });
+  toggleBackToTop();
 })();
