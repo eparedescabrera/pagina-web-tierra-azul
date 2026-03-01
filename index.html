@@ -405,7 +405,7 @@
         <div class="grid3">
           <!-- 1) CALIDAD -->
           <article class="card card-overlay">
-            <img src="assets/melon2.jpeg" alt="Calidad" />
+            <img src="assets/melon2.jpeg" alt="Calidad" loading="lazy" decoding="async" />
             <div class="pad">
               <div class="icon">
                 <i class="fa-solid fa-award"></i>
@@ -436,7 +436,7 @@
 
           <!-- 2) AGRICULTURA -->
           <article class="card card-overlay">
-            <img src="assets/mata.jpeg" alt="Agricultura sostenible" />
+            <img src="assets/mata.jpeg" alt="Agricultura sostenible" loading="lazy" decoding="async" />
             <div class="pad">
               <div class="icon">
                 <i class="fa-solid fa-leaf"></i>
@@ -468,7 +468,7 @@
 
           <!-- 3) RESPONSABILIDAD -->
           <article class="card card-overlay">
-            <img src="assets/arando.jpeg" alt="Responsabilidad social" />
+            <img src="assets/arando.jpeg" alt="Responsabilidad social" loading="lazy" decoding="async" />
             <div class="pad">
               <div class="icon">
                 <i class="fa-solid fa-hand-holding-heart"></i>
@@ -523,6 +523,7 @@
           <div class="video-simple__frame">
             <iframe
               src="https://www.youtube.com/embed/DCc8yaQokik"
+              loading="lazy"
               title="Video institucional"
               frameborder="0"
               allow="
@@ -574,7 +575,7 @@
 
             <div class="product-stage">
               <span class="blob blob-green"></span>
-              <img class="product-img" src="assets/sandia.jpeg" alt="Sandía" />
+              <img class="product-img" src="assets/sandia.jpeg" alt="Sandía" loading="lazy" decoding="async" />
             </div>
 
             <div class="corner corner-red">
@@ -604,7 +605,7 @@
 
             <div class="product-stage">
               <span class="blob blob-yellow"></span>
-              <img class="product-img" src="assets/melon.jpeg" alt="Melón" />
+              <img class="product-img" src="assets/melon.jpeg" alt="Melón" loading="lazy" decoding="async" />
             </div>
 
             <div class="corner corner-yellow">
@@ -730,36 +731,36 @@
 </footer>
 
     <!-- JS -->
-    <script
-      src="https://kit.fontawesome.com/739c16c71e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/header.js"></script>
-    <script src="js/main.js"></script>
+    <script defer src="js/header.js"></script>
+    <script defer src="js/main.js"></script>
   
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-      AOS.init({ once: true });
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.AOS) AOS.init({ once: true });
 
-      new Swiper(".heroSwiper", {
-        loop: true,
-        speed: 900,
-        autoplay: {
-          delay: 3500,
-          disableOnInteraction: false,
-        },
-        pagination: { el: ".swiper-pagination", clickable: true },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+        if (window.Swiper) {
+          new Swiper(".heroSwiper", {
+            loop: true,
+            speed: 900,
+            autoplay: {
+              delay: 3500,
+              disableOnInteraction: false,
+            },
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        }
       });
     </script>
-  </body>
     <!-- 🔵 Traducción -->
-    <script src="js/translate.js"></script>
+    <script defer src="js/translate.js"></script>
+  </body>
 </html>

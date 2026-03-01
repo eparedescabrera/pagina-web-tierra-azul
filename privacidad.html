@@ -31,8 +31,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Opcional: CSS específico para esta página -->
     <link rel="stylesheet" href="css/privacidad.css" />
-    <link rel="stylesheet" href="css/privacidad.css">
-  </head>
+      </head>
 
   <body>
     <!-- TOPBAR -->
@@ -657,19 +656,17 @@
     </footer>
 
     <!-- JS LIBRERÍAS -->
-    <script
-      src="https://kit.fontawesome.com/739c16c71e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/header.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="js/header.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({ once: true });
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.AOS) AOS.init({ once: true });
+      });
     </script>
 
     <!-- 🔵 Traducción -->
-    <script src="js/translate.js"></script>
+    <script defer src="js/translate.js"></script>
   </body>
 </html>
