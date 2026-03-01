@@ -1,0 +1,126 @@
+/* =========================================================
+   TARJETAS DE PRODUCTOS - TIERRA AZUL /Tierra Azul  1981 S.A
+========================================================= */
+
+.producto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+/* ====== TARJETA ====== */
+.producto-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 18px;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* ====== IMAGEN ====== */
+.producto-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter .4s ease, transform .4s ease;
+}
+
+.producto-card:hover .producto-img img {
+  filter: brightness(60%);
+  transform: scale(1.06);
+}
+
+/* ====== OVERLAY ====== */
+.producto-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity .4s ease, transform .4s ease;
+}
+
+.producto-card:hover .producto-overlay {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+/* ====== TÍTULO ====== */
+.producto-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 4px;
+  letter-spacing: .5px;
+}
+
+/* ====== SUBTÍTULO ====== */
+.producto-sub {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ====== LÍNEA NARANJA ====== */
+.producto-line {
+  width: 55px;
+  height: 4px;
+  background: #F2890A; /* NARANJA CORPORATIVO */
+  margin: 14px auto 0;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+
+.producto-card:hover .producto-line {
+  opacity: 1;
+}
+/* BADGE EN LA ESQUINA INFERIOR DERECHA */
+.producto-badge {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 75px;
+  height: 75px;
+  background: url("assets/badge.png") no-repeat center;
+  background-size: contain;
+  pointer-events: none;  /* No afecta el clic */
+  z-index: 3;
+}
+.section-top {
+  max-width: 900px;       /* controla el ancho del texto */
+  margin: 0 auto 40px;    /* centra horizontalmente */
+  text-align: center;     /* centra el texto */
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .producto-title {
+    font-size: 1.5rem;
+  }
+  .producto-sub {
+    font-size: .9rem;
+  }
+}

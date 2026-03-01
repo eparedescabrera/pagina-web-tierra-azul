@@ -1,0 +1,176 @@
+/* ===== HERO CONTACTO ===== */
+.inner-hero--contacto {
+  background-image: url("../assets/contact.webp"); /* cambia la imagen si quieres */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 320px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Reutiliza estos si no los tienes ya */
+.inner-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.inner-hero__content {
+  position: relative;
+  text-align: center;
+  color: #def10b;
+  padding: 0 15px;
+}
+
+.inner-hero__title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.inner-hero__subtitle {
+  font-size: 16px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ===== SECCIÓN CONTACTO ===== */
+.section-contacto {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: 3rem;
+}
+
+/* Títulos secundarios */
+.section-title-sm {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+/* Información general */
+.contact-general p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.contact-general i {
+  margin-right: 6px;
+  color: #f5c400;
+}
+
+/* Horario */
+.horario-static {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.horario-dinamico {
+  font-size: 14px;
+  font-weight: 700;
+  color: #16a34a !important; /* verde si abierto; el texto indica si está cerrado */
+}
+
+/* Grid de bloques (áreas de contacto) */
+.contact-block-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 40px;
+  row-gap: 32px;
+}
+
+/* Cada bloque */
+.contact-block {
+  border-top: 3px solid #f5c400;
+  padding-top: 12px;
+}
+
+.contact-block h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.contact-name {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.contact-role {
+  font-size: 13px;
+  font-style: italic;
+  color: #4b5563;
+  margin-bottom: 4px;
+}
+
+.contact-email {
+  font-size: 13px;
+  margin: 0;
+}
+
+.contact-email i {
+  margin-right: 6px;
+  color: #f5c400;
+}
+
+.contact-email a {
+  color: #f97316;
+  text-decoration: none;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
+
+/* Caja del formulario */
+.contact-form-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 26px;
+  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.contact-form .form-control {
+  border-radius: 10px;
+  border-color: #d1d5db;
+  font-size: 14px;
+}
+
+.contact-form .form-control:focus {
+  border-color: #f5c400;
+  box-shadow: 0 0 0 0.15rem rgba(245, 196, 0, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .inner-hero--contacto {
+    height: 260px;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-block-grid {
+    grid-template-columns: 1fr;
+  }
+}

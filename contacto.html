@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tierra Azul 1981 S.A - Contacto</title>
+
+    <!-- Fuentes / librerías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS de terceros -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- CSS propios (global primero, luego página) -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+  </head>
+
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar2">
+      <div class="container topbar2__wrap">
+        <div class="topbar2__item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span
+            data-es="Pilas de Cangel, Puntarenas, Costa Rica."
+            data-en="Pilas de Cangel, Puntarenas, Costa Rica."
+          >
+            Pilas de Cangel, Puntarenas, Costa Rica.
+          </span>
+        </div>
+
+        <div class="topbar2__right">
+          <a class="topbar2__item" href="mailto:waju@grupopenca.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span data-es="waju@grupopenca.com" data-en="waju@grupopenca.com">
+              waju@grupopenca.com
+            </span>
+          </a>
+          <a class="topbar2__item" href="tel:+50645002389">
+            <i class="fa-solid fa-phone"></i>
+            <span data-es="+506 45002389" data-en="+506 45002389">
+              +506 45002389
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER AMARILLO -->
+    <header class="header2" id="siteHeader">
+      <div class="container header2__wrap">
+        <a class="header2__brand" href="index.html" aria-label="Inicio">
+          <span class="brand-text">
+            <span class="brand-name">
+              <span class="brand-tierra">TIERRA</span>
+              <span class="brand-azul">AZUL</span>
+            </span>
+            <span class="brand-sub">1981 S.A</span>
+          </span>
+        </a>
+
+        <div class="header2__right">
+          <div class="header2__social">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#" aria-label="WhatsApp">
+              <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+
+          <!-- Botón hamburguesa (móvil) -->
+          <button
+            class="nav2__toggle"
+            id="navToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- NAV DESKTOP -->
+      <div class="nav2" id="navBar">
+        <nav class="nav2__box" aria-label="Menú principal">
+          <a class="nav2__link" href="index.html">
+            <span data-es="Inicio" data-en="Home">Inicio</span>
+          </a>
+
+          <div class="nav2__dropdown" id="dropNosotros">
+            <a class="nav2__link nav2__dropbtn" href="#">
+              <span data-es="Nosotros" data-en="About Us">Nosotros</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <div class="nav2__submenu" id="subNosotros">
+              <a href="empresa.html">
+                <span data-es="Empresa" data-en="Company">Empresa</span>
+              </a>
+              <a href="estrategia.html">
+                <span data-es="Estrategia" data-en="Strategy">Estrategia</span>
+              </a>
+              <a href="equipo.html">
+                <span data-es="Calidad" data-en="Quality">Calidad</span>
+              </a>
+            </div>
+          </div>
+
+          <a class="nav2__link" href="responsabilidad-social.html">
+            <span
+              data-es="Responsabilidad Social"
+              data-en="Social Responsibility"
+            >
+              Responsabilidad Social
+            </span>
+          </a>
+          <a class="nav2__link" href="productos.html">
+            <span data-es="Productos" data-en="Products">Productos</span>
+          </a>
+          <a class="nav2__link" href="noticias.html">
+            <span data-es="Noticias" data-en="News">Noticias</span>
+          </a>
+          <a class="nav2__link nav2__link--active" href="contacto.html">
+            <span data-es="Contacto" data-en="Contact">Contacto</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- PANEL MÓVIL -->
+      <div class="nav2__backdrop" id="navBackdrop"></div>
+      <aside class="nav2__panel" id="navPanel" aria-label="Menú móvil">
+        <div class="nav2__panelHead">
+          <span class="nav2__panelTitle" data-es="Menú" data-en="Menu">
+            Menú
+          </span>
+          <button class="nav2__close" id="navClose" aria-label="Cerrar menú">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="nav2__panelBody">
+          <a class="nav2__mLink" href="index.html">
+            <span data-es="Inicio" data-en="Home">Inicio</span>
+          </a>
+
+          <button
+            class="nav2__mDrop"
+            type="button"
+            data-submenu="msubNosotros"
+            aria-expanded="false"
+          >
+            <span data-es="Nosotros" data-en="About Us">Nosotros</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav2__mSub" id="msubNosotros">
+            <a href="empresa.html">
+              <span data-es="Empresa" data-en="Company">Empresa</span>
+            </a>
+            <a href="estrategia.html">
+              <span data-es="Estrategia" data-en="Strategy">Estrategia</span>
+            </a>
+            <a href="equipo.html">
+              <span data-es="Calidad" data-en="Quality">Calidad</span>
+            </a>
+          </div>
+
+          <a class="nav2__mLink" href="responsabilidad-social.html">
+            <span
+              data-es="Responsabilidad Social"
+              data-en="Social Responsibility"
+            >
+              Responsabilidad Social
+            </span>
+          </a>
+          <a class="nav2__mLink" href="productos.html">
+            <span data-es="Productos" data-en="Products">Productos</span>
+          </a>
+          <a class="nav2__mLink" href="noticias.html">
+            <span data-es="Noticias" data-en="News">Noticias</span>
+          </a>
+          <a class="nav2__mLink" href="contacto.html">
+            <span data-es="Contacto" data-en="Contact">Contacto</span>
+          </a>
+        </div>
+      </aside>
+    </header>
+
+    <!-- Separador sticky -->
+    <div class="page-start"></div>
+
+    <main>
+      <!-- HERO CONTACTO -->
+      <section class="inner-hero inner-hero--contacto">
+        <div class="inner-hero__overlay"></div>
+        <div class="container inner-hero__content">
+          <h1
+            class="inner-hero__title"
+            data-es="Contáctenos"
+            data-en="Contact Us"
+          >
+            Contáctenos
+          </h1>
+          <p
+            class="inner-hero__subtitle"
+            data-es="Escríbanos y nuestro personal le contactará lo antes posible."
+            data-en="Write to us and our staff will contact you as soon as possible."
+          >
+            Escríbanos y nuestro personal le contactará lo antes posible.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECCIÓN CONTACTO -->
+      <section class="section section-contacto">
+        <div class="container contact-layout">
+          <!-- COLUMNA IZQUIERDA -->
+          <div class="contact-info" data-aos="fade-right">
+            <h2
+              class="section-title-sm"
+              data-es="Información general"
+              data-en="General Information"
+            >
+              Información general
+            </h2>
+
+            <div class="row contact-general">
+              <div class="col-md-6">
+                <p>
+                  <span
+                    data-es="Pilas, provincia de Puntarenas"
+                    data-en="Pilas, Puntarenas province"
+                  >
+                    Pilas, provincia de Puntarenas
+                  </span>
+                  <br />
+                  <span data-es="Costa Rica." data-en="Costa Rica.">
+                    Costa Rica.
+                  </span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-phone"></i>
+                  <span data-es="+506 45002389" data-en="+506 45002389">
+                    +506 45002389
+                  </span>
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <p>
+                  <i class="fa-solid fa-envelope"></i>
+                  <span
+                    data-es="awu"
+                    data-en="waju@grupopenca.com"
+                  >
+                     waju@grupopenca.com
+                  </span>
+                </p>
+                <p class="horario-static">
+                  <span
+                    data-es="Lunes–Viernes: 8:00 a.m. – 4:00 p.m."
+                    data-en="Monday–Friday: 8:00 a.m. – 4:00 p.m."
+                  >
+                    Lunes–Viernes: 8:00 a.m. – 4:00 p.m.
+                  </span>
+                  <br />
+                  <span
+                    data-es="Sábado: 8:00 a.m. – 12:00 m.d."
+                    data-en="Saturday: 8:00 a.m. – 12:00 p.m."
+                  >
+                    Sábado: 8:00 a.m. – 12:00 m.d.
+                  </span>
+                  <br />
+                  <span data-es="Domingo: Cerrado" data-en="Sunday: Closed">
+                    Domingo: Cerrado
+                  </span>
+                </p>
+                <!-- Texto dinámico con JS -->
+                <p class="horario-dinamico" id="horarioDinamico"></p>
+              </div>
+            </div>
+
+            <!-- Bloques de contacto por área -->
+            <div class="contact-block-grid">
+              <article class="contact-block">
+                <h3 data-es="Gerencia General" data-en="General Management">
+                  Gerencia General
+                </h3>
+                <p
+                  class="contact-name"
+                  data-es="NOMBRE GERENTE"
+                  data-en="MANAGER NAME"
+                >
+                  NOMBRE GERENTE
+                </p>
+                <p
+                  class="contact-role"
+                  data-es="Gerencia General"
+                  data-en="General Management"
+                >
+                  Gerencia General
+                </p>
+                <p class="contact-email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:jose.paredes.cabrera@est.una.ac.cr.com">
+                    <span
+                      data-es="jose.paredes.cabrera@est.una.ac.cr.com"
+                      data-en="jose.paredes.cabrera@est.una.ac.cr.com"
+                    >
+                      jose.paredes.cabrera@est.una.ac.cr.com
+                    </span>
+                  </a>
+                </p>
+              </article>
+
+              <article class="contact-block">
+                <h3
+                  data-es="Gerencia de Producción"
+                  data-en="Production Management"
+                >
+                  Gerencia de Producción
+                </h3>
+                <p
+                  class="contact-name"
+                  data-es="NOMBRE RESPONSABLE"
+                  data-en="RESPONSIBLE NAME"
+                >
+                  NOMBRE RESPONSABLE
+                </p>
+                <p
+                  class="contact-role"
+                  data-es="Gerencia de Producción"
+                  data-en="Production Management"
+                >
+                  Gerencia de Producción
+                </p>
+                <p class="contact-email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:produccion@tierraazul.com">
+                    <span
+                      data-es="produccion@tierraazul.com"
+                      data-en="produccion@tierraazul.com"
+                    >
+                      produccion@tierraazul.com
+                    </span>
+                  </a>
+                </p>
+              </article>
+
+              <article class="contact-block">
+                <h3
+                  data-es="Aseguramiento de Calidad"
+                  data-en="Quality Assurance"
+                >
+                  Aseguramiento de Calidad
+                </h3>
+                <p
+                  class="contact-name"
+                  data-es="NOMBRE RESPONSABLE"
+                  data-en="RESPONSIBLE NAME"
+                >
+                  NOMBRE RESPONSABLE
+                </p>
+                <p
+                  class="contact-role"
+                  data-es="Aseguramiento de Calidad"
+                  data-en="Quality Assurance"
+                >
+                  Aseguramiento de Calidad
+                </p>
+                <p class="contact-email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:calidad@tierraazul.com">
+                    <span
+                      data-es="calidad@tierraazul.com"
+                      data-en="calidad@tierraazul.com"
+                    >
+                      calidad@tierraazul.com
+                    </span>
+                  </a>
+                </p>
+              </article>
+
+              <article class="contact-block">
+                <h3
+                  data-es="Logística de Exportación"
+                  data-en="Export Logistics"
+                >
+                  Logística de Exportación
+                </h3>
+                <p
+                  class="contact-name"
+                  data-es="NOMBRE RESPONSABLE"
+                  data-en="RESPONSIBLE NAME"
+                >
+                  NOMBRE RESPONSABLE
+                </p>
+                <p
+                  class="contact-role"
+                  data-es="Logística de Exportación"
+                  data-en="Export Logistics"
+                >
+                  Logística de Exportación
+                </p>
+                <p class="contact-email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:logistica@tierraazul.com">
+                    <span
+                      data-es="logistica@tierraazul.com"
+                      data-en="logistica@tierraazul.com"
+                    >
+                      logistica@tierraazul.com
+                    </span>
+                  </a>
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <!-- COLUMNA DERECHA: FORMULARIO -->
+          <div class="contact-form-box" data-aos="fade-left">
+            <h2
+              class="section-title-sm"
+              data-es="Formulario de contacto"
+              data-en="Contact Form"
+            >
+              Formulario de contacto
+            </h2>
+            <p
+              class="mb-3"
+              data-es="Complete el siguiente formulario y en breve estaremos en contacto."
+              data-en="Please complete the form below and we will get back to you shortly."
+            >
+              Complete el siguiente formulario y en breve estaremos en contacto.
+            </p>
+
+            <form
+              id="contactForm"
+              class="contact-form needs-validation"
+              method="POST"
+              enctype="multipart/form-data"
+              novalidate
+            >
+              <!-- Opciones FormSubmit -->
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nuevo mensaje desde Tierra Azul"
+                data-es-value="Nuevo mensaje desde Tierra Azul"
+                data-en-value="New message from Tierra Azul"
+              />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Gracias por contactarnos. Hemos recibido su mensaje y le responderemos en breve."
+              />
+              <!-- Redirección opcional después de enviar -->
+              <!-- <input type="hidden" name="_next" value="https://tudominio.com/gracias.html" /> -->
+
+              <div class="row g-3">
+                <!-- NOMBRE -->
+                <div class="col-md-6">
+                  <label
+                    class="form-label"
+                    for="nombre"
+                    data-es="Su nombre"
+                    data-en="Your Name"
+                  >
+                    Su nombre
+                  </label>
+                  <input
+                    id="nombre"
+                    type="text"
+                    class="form-control"
+                    name="nombre"
+                    required
+                    pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s'.-]+$"
+                     maxlength="150"
+                    data-es-ph="Su nombre"
+                    data-en-ph="Your name"
+                  />
+                  <div
+                    class="invalid-feedback"
+                    data-es="Ingrese un nombre válido (solo letras)"
+                    data-en="Enter a valid name (letters only)"
+                  >
+                    Ingrese un nombre válido (solo letras)
+                  </div>
+                </div>
+
+                <!-- CORREO -->
+                <div class="col-md-6">
+                  <label
+                    class="form-label"
+                    for="correo"
+                    data-es="Su correo electrónico"
+                    data-en="Your Email"
+                  >
+                    Su correo electrónico
+                  </label>
+                  <input
+                    id="correo"
+                    type="email"
+                    class="form-control"
+                    name="correo"
+                    required
+                    maxlength="120"
+                    autocomplete="email"
+                    data-es-ph="Su correo electrónico"
+                    data-en-ph="Your email"
+                  />
+                  <div
+                    class="invalid-feedback"
+                    data-es="Ingrese un correo electrónico válido."
+                    data-en="Please enter a valid email address."
+                  >
+                    Ingrese un correo electrónico válido.
+                  </div>
+                </div>
+
+                <!-- ASUNTO -->
+                <div class="col-12">
+                  <label
+                    class="form-label"
+                    for="asunto"
+                    data-es="Asunto"
+                    data-en="Subject"
+                  >
+                    Asunto
+                  </label>
+                <input
+  id="asunto"
+  type="text"
+  class="form-control"
+  name="asunto"
+  required
+  minlength="3"
+  maxlength="150"
+  pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s'.-]+$"
+  autocomplete="off"
+  data-es-ph="Asunto"
+  data-en-ph="Subject"
+/>
+<div
+  class="invalid-feedback"
+  data-es="Ingrese un asunto válido (solo letras y mínimo 3 caracteres)."
+  data-en="Enter a valid subject (letters only, at least 3 characters)."
+>
+  Ingrese un asunto válido (solo letras y mínimo 3 caracteres).
+</div>
+                </div>
+
+                <!-- MENSAJE (OPCIONAL) -->
+                <div class="col-12">
+                  <label
+                    class="form-label"
+                    for="mensaje"
+                    data-es="Mensaje (opcional)"
+                    data-en="Message (optional)"
+                  >
+                    Mensaje (opcional)
+                  </label>
+                  <textarea
+                    id="mensaje"
+                    class="form-control"
+                    name="mensaje"
+                    rows="4"
+                    maxlength="2000"
+                    data-es-ph="Escriba su mensaje"
+                    data-en-ph="Type your message"
+                  ></textarea>
+                  <div
+                    class="invalid-feedback"
+                    data-es="El mensaje es demasiado largo (máximo 2000 caracteres)."
+                    data-en="The message is too long (maximum 2000 characters)."
+                  >
+                    El mensaje es demasiado largo (máximo 2000 caracteres).
+                  </div>
+                </div>
+
+                <!-- ARCHIVO -->
+                <div class="col-12">
+                  <label
+                    class="form-label"
+                    data-es="Adjuntar documento (opcional)"
+                    data-en="Attach document (optional)"
+                  >
+                    Adjuntar documento (opcional)
+                  </label>
+                  <input
+                    type="file"
+                    class="form-control"
+                    name="archivo"
+                    id="archivo"
+                    accept=".pdf"
+                  />
+                  <div
+                    class="invalid-feedback"
+                    data-es="Solo se permiten archivos PDF de hasta 5 MB."
+                    data-en="Only PDF files up to 5 MB are allowed."
+                  >
+                    Solo se permiten archivos PDF de hasta 5 MB.
+                  </div>
+                </div>
+
+                <!-- BOTÓN -->
+                <div class="col-12 text-end">
+                  <button type="submit" class="btn btn-warning px-4">
+                    <strong data-es="Enviar mensaje" data-en="Send message">
+                      Enviar mensaje
+                    </strong>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- INFO DE INTERÉS -->
+      <section class="info-interest">
+        <div class="container wrap">
+          <strong
+            data-es="Información de Interés"
+            data-en="Information of Interest"
+          >
+            Información de Interés
+          </strong>
+          <div class="social">
+            <a href="#" class="social-facebook" target="_blank">
+              <span data-es="Facebook" data-en="Facebook">Facebook</span>
+            </a>
+            <a href="#" class="social-linkedin" target="_blank">
+              <span data-es="LinkedIn" data-en="LinkedIn">LinkedIn</span>
+            </a>
+            <a href="#" class="social-youtube" target="_blank">
+              <span data-es="YouTube" data-en="YouTube">YouTube</span>
+            </a>
+            <a href="contacto.html" class="social-contact">
+              <span data-es="Contacte un agente" data-en="Contact an agent">
+                Contacte un agente
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container cols">
+        <div>
+          <strong
+            data-es="Producir, comercializar y exportar"
+            data-en="Produce, market, and export"
+          >
+            Producir, comercializar y exportar
+          </strong>
+          <div
+            class="copy"
+            data-es="Un producto que cumpla estándares nacionales e internacionales mediante controles de procesos y valor agregado con apoyo de un personal competitivo."
+            data-en="A product that meets national and international standards through process controls and added value, supported by a competitive staff."
+          >
+            Un producto que cumpla estándares nacionales e internacionales
+            mediante controles de procesos y valor agregado con apoyo de un
+            personal competitivo.
+          </div>
+          <div class="copy">
+            © <span id="year"></span>
+            <span data-es="Tierra Azul  1981 S.A" data-en="Tierra Azul  1981 S.A">
+              Tierra Azul
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <strong data-es="DIRECCIÓN" data-en="ADDRESS"> DIRECCIÓN </strong>
+          <div class="copy">
+            <span
+              data-es="Ubicación: Pilas de Canjel, Puntarenas, Costa Rica."
+              data-en="Location: Pilas de Canjel, Puntarenas, Costa Rica."
+            >
+              Ubicación: Pilas de Canjel, Puntarenas, Costa Rica.
+            </span>
+            <br />
+            <span
+              data-es="Correo: waju@grupopenca.com"
+              data-en="Email: waju@grupopenca.com"
+            >
+              Correo: waju@grupopenca.com
+            </span>
+            <br />
+            <span
+              data-es="Teléfono: +506 506 45002389"
+              data-en="Phone: +506 506 45002389"
+            >
+              Teléfono: +506 506 45002389
+            </span>
+          </div>
+          <div class="copy">
+            <a href="documentos.html">
+              <span data-es="Documentos (PDF)" data-en="Documents (PDF)">
+                Documentos (PDF)
+              </span>
+            </a>
+            ·
+            <a href="contacto.html">
+              <span data-es="Contacto" data-en="Contact">Contacto</span>
+            </a>
+            ·
+            <a href="privacidad.html">
+              <span data-es="Política de Privacidad" data-en="Privacy Policy">
+                Política de Privacidad
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS LIBRERÍAS -->
+    <script
+      src="https://kit.fontawesome.com/739c16c71e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- JS PROPIOS -->
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contacto.js"></script>
+
+    <!-- 🔵 Traducción: mismo archivo que usas en index -->
+    <script src="js/translate.js"></script>
+
+    <script>
+      AOS.init({ once: true });
+    </script>
+  </body>
+</html>

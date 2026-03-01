@@ -1,0 +1,166 @@
+/* =========================================================
+   SANDÍA – PÁGINA DE PRODUCTO
+   Archivo: css/sandia.css
+========================================================= */
+
+/* ---------- HERO SUPERIOR ---------- */
+
+.inner-hero--producto-sandia {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  color: #f1eeee;
+  text-align: left;
+  background:
+    linear-gradient(120deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.25)),
+    url("../assets/sandiadescripci.jpeg") center/cover no-repeat;
+}
+
+/* Si no tienes sandia-hero.jpg, usa la misma sandia.jpeg o la que quieras */
+.inner-hero--producto-sandia .inner-hero__content {
+  max-width: 700px;
+}
+
+.inner-hero--producto-sandia .inner-hero__title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.inner-hero--producto-sandia .inner-hero__subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+.inner-hero__heading {
+  display: inline-block;
+}
+
+.hero-divider {
+  display: block;
+  margin-top: 8px;
+  width: 70px;
+  height: 3px;
+  background: #f5c400;
+  border-radius: 10px;
+}
+.inner-hero__subtitle {
+  margin-top: 12px;
+}
+/* ---------- SECCIÓN PRINCIPAL ---------- */
+
+.section-producto {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+/* Caja genérica (ya usas .article-box en otras páginas, aquí solo refinamos un poco) */
+.section-producto .article-box {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px 26px;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e2e8f0;
+}
+
+/* Título pequeño dentro del contenido */
+.section-title-sm {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+/* ---------- TABLA FICHA TÉCNICA ---------- */
+
+.table-producto {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.table-producto th,
+.table-producto td {
+  vertical-align: top;
+  padding: 10px 12px;
+}
+
+.table-producto th {
+  width: 30%;
+  font-weight: 700;
+  background-color: #f8fafc;
+  color: #0f172a;
+  border-right: 1px solid #e2e8f0;
+}
+
+.table-producto tr:nth-child(even) td {
+  background-color: #f9fafb;
+}
+
+/* ---------- LISTA DE BENEFICIOS ---------- */
+
+.lista-beneficios {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.lista-beneficios li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+.lista-beneficios li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #f2890a; /* naranja corporativo */
+}
+
+/* ---------- TARJETA LATERAL ---------- */
+
+.empresa-card.article-box img {
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+.empresa-card.article-box h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.empresa-card.article-box p.small,
+.empresa-card.article-box ul.small {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 992px) {
+  .inner-hero--producto-sandia {
+    min-height: 260px;
+    text-align: center;
+  }
+
+  .inner-hero--producto-sandia .inner-hero__content {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner-hero--producto-sandia .inner-hero__title {
+    font-size: 2.2rem;
+  }
+
+  .section-producto .article-box {
+    padding: 20px 18px;
+  }
+}

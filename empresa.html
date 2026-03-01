@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Tierra Azul 1981 S.A - Empresa</title>
+
+  <!-- Fuentes / librerías (igual que index) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- 🔹 CSS específico de ESTA página -->
+  <link rel="stylesheet" href="css/empresa.css"><!-- cambia por estrategia.css, calidad.css, etc. -->
+</head>
+
+<body>
+  <!-- TOPBAR (igual en todas) -->
+  <div class="topbar2">
+    <div class="container topbar2__wrap">
+      <div class="topbar2__item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span
+          data-es="Pilas de Cangel, Puntarenas, Costa Rica."
+          data-en="Pilas de Cangel, Puntarenas, Costa Rica."
+        >
+          Pilas de Cangel, Puntarenas, Costa Rica.
+        </span>
+      </div>
+      <div class="topbar2__right">
+        <a class="topbar2__item" href="mailto:waju@grupopenca.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span
+            data-es="waju@grupopenca.com"
+            data-en="waju@grupopenca.com"
+          >
+            waju@grupopenca.com
+          </span>
+        </a>
+        <a class="topbar2__item" href="tel:+50645002389">
+          <i class="fa-solid fa-phone"></i>
+          <span
+            data-es="+506 45002389"
+            data-en="+506 45002389"
+          >
+            +506 45002389
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER AMARILLO -->
+  <header class="header2" id="siteHeader">
+    <div class="container header2__wrap">
+      <a class="header2__brand" href="index.html" aria-label="Inicio">
+        <span class="brand-text">
+          <span class="brand-name">
+            <span class="brand-tierra">TIERRA</span>
+            <span class="brand-azul">AZUL</span>
+          </span>
+          <span class="brand-sub">1981 S.A</span>
+        </span>
+      </a>
+
+      <div class="header2__right">
+        <div class="header2__social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-square-whatsapp"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <!-- Botón hamburguesa (solo móvil) -->
+        <button
+          class="nav2__toggle"
+          id="navToggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- NAV flotante centrado (desktop) -->
+    <div class="nav2" id="navBar">
+      <nav class="nav2__box" aria-label="Menú principal">
+        <a class="nav2__link" href="index.html">
+          <span data-es="Inicio" data-en="Home">Inicio</span>
+        </a>
+
+        <div class="nav2__dropdown" id="dropNosotros">
+          <a class="nav2__link nav2__dropbtn" href="#">
+            <span data-es="Nosotros" data-en="About Us">Nosotros</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+
+          <div class="nav2__submenu" id="subNosotros">
+            <a href="empresa.html">
+              <span data-es="Empresa" data-en="Company">Empresa</span>
+            </a>
+            <a href="estrategia.html">
+              <span data-es="Estrategia" data-en="Strategy">Estrategia</span>
+            </a>
+            <a href="equipo.html">
+              <span data-es="Calidad" data-en="Quality">Calidad</span>
+            </a>
+          </div>
+        </div>
+
+        <a class="nav2__link" href="responsabilidad-social.html">
+          <span
+            data-es="Responsabilidad Social"
+            data-en="Social Responsibility"
+          >
+            Responsabilidad Social
+          </span>
+        </a>
+        <a class="nav2__link" href="productos.html">
+          <span data-es="Productos" data-en="Products">Productos</span>
+        </a>
+        <a class="nav2__link" href="noticias.html">
+          <span data-es="Noticias" data-en="News">Noticias</span>
+        </a>
+        <a class="nav2__link" href="contacto.html">
+          <span data-es="Contacto" data-en="Contact">Contacto</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- PANEL MÓVIL (overlay) -->
+    <div class="nav2__backdrop" id="navBackdrop"></div>
+
+    <aside class="nav2__panel" id="navPanel" aria-label="Menú móvil">
+      <div class="nav2__panelHead">
+        <span
+          class="nav2__panelTitle"
+          data-es="Menú"
+          data-en="Menu"
+        >
+          Menú
+        </span>
+        <button class="nav2__close" id="navClose" aria-label="Cerrar menú">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="nav2__panelBody">
+        <a class="nav2__mLink" href="index.html">
+          <span data-es="Inicio" data-en="Home">Inicio</span>
+        </a>
+
+        <!-- ✅ SOLO "NOSOTROS" TIENE SUBMENU EN MÓVIL -->
+        <button
+          class="nav2__mDrop"
+          type="button"
+          data-submenu="msubNosotros"
+          aria-expanded="false"
+        >
+          <span data-es="Nosotros" data-en="About Us">Nosotros</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="nav2__mSub" id="msubNosotros">
+          <a
+                href="empresa.html"
+                data-es="Empresa"
+                data-en="Company"
+              >
+                Empresa
+              </a>
+              <a
+                href="estrategia.html"
+                data-es="Estrategia"
+                data-en="Strategy"
+              >
+                Estrategia
+              </a>
+              <a
+                href="equipo.html"
+                data-es="Calidad"
+                data-en="Quality"
+              >
+                Calidad
+              </a>
+        </div>
+
+        <!-- ✅ LOS DEMÁS SON LINKS NORMALES -->
+        <a class="nav2__mLink" href="responsabilidad-social.html">
+          <span
+            data-es="Responsabilidad Social"
+            data-en="Social Responsibility"
+          >
+            Responsabilidad Social
+          </span>
+        </a>
+        <a class="nav2__mLink" href="productos.html">
+          <span data-es="Productos" data-en="Products">Productos</span>
+        </a>
+        <a class="nav2__mLink" href="noticias.html">
+          <span data-es="Noticias" data-en="News">Noticias</span>
+        </a>
+        <a class="nav2__mLink" href="contacto.html">
+          <span data-es="Contacto" data-en="Contact">Contacto</span>
+        </a>
+      </div>
+    </aside>
+  </header>
+
+  <!-- Espacio del sticky -->
+  <div class="page-start"></div>
+
+  <!-- 🔹 CONTENIDO DE LA PÁGINA (cambia en cada archivo) -->
+  <main>
+
+    <!-- HERO INTERNO -->
+    <section class="inner-hero inner-hero--empresa">
+      <div class="inner-hero__overlay"></div>
+      <div class="container inner-hero__content">
+        <h1
+          class="inner-hero__title"
+          data-es="Nuestra Empresa"
+          data-en="Our Company"
+        >
+          Nuestra Empresa
+        </h1>
+        <p
+          class="inner-hero__subtitle"
+          data-es="Historia, experiencia y compromiso con la calidad."
+          data-en="History, experience, and commitment to quality."
+        >
+          Historia, experiencia y compromiso con la calidad.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTENIDO EMPRESA -->
+    <section class="section">
+      <div class="container empresa-layout">
+        <div class="empresa-texto article-box">
+          <h2
+            data-es="Quiénes somos"
+            data-en="Who we are"
+          >
+            Quiénes somos
+          </h2>
+          <p
+            data-es="Tierra Azul 1981 S.A es una empresa dedicada a la producción y exportación de melones y sandías de la más alta calidad, ubicada en la provincia de Puntarenas, Costa Rica."
+            data-en="Tierra Azul 1981 S.A is a company dedicated to the production and export of high-quality melons and watermelons, located in the province of Puntarenas, Costa Rica."
+          >
+            Tierra Azul 1981 S.A es una empresa dedicada a la producción y exportación de melones
+            y sandías de la más alta calidad, ubicada en la provincia de Puntarenas, Costa Rica.
+          </p>
+          <p
+            data-es="Integramos buenas prácticas agrícolas, tecnología y talento humano para ofrecer fruta segura y confiable a nuestros clientes internacionales."
+            data-en="We integrate good agricultural practices, technology, and human talent to offer safe and reliable fruit to our international clients."
+          >
+            Integramos buenas prácticas agrícolas, tecnología y talento humano para ofrecer fruta
+            segura y confiable a nuestros clientes internacionales.
+          </p>
+
+          <h3
+            data-es="Nuestros objetivos"
+            data-en="Our objectives"
+          >
+            Nuestros objetivos
+          </h3>
+          <ul>
+            <li
+              data-es="Asegurar la calidad e inocuidad de la fruta."
+              data-en="Ensure the quality and safety of our fruit."
+            >
+              Asegurar la calidad e inocuidad de la fruta.
+            </li>
+            <li
+              data-es="Promover el desarrollo social en las comunidades donde operamos."
+              data-en="Promote social development in the communities where we operate."
+            >
+              Promover el desarrollo social en las comunidades donde operamos.
+            </li>
+            <li
+              data-es="Proteger el medio ambiente mediante prácticas sostenibles."
+              data-en="Protect the environment through sustainable practices."
+            >
+              Proteger el medio ambiente mediante prácticas sostenibles.
+            </li>
+          </ul>
+        </div>
+
+        <aside class="empresa-side">
+          <div class="empresa-card">
+            <h4
+              data-es="Datos clave"
+              data-en="Key facts"
+            >
+              Datos clave
+            </h4>
+            <ul>
+              <li>
+                <strong
+                  data-es="Ubicación:"
+                  data-en="Location:"
+                >
+                  Ubicación:
+                </strong>
+                <span
+                  data-es=" Pilas de Cangel, Puntarenas, Costa Rica."
+                  data-en=" Pilas de Cangel, Puntarenas, Costa Rica."
+                >
+                  Pilas de Cangel, Puntarenas, Costa Rica.
+                </span>
+              </li>
+              <li>
+                <strong
+                  data-es="Actividad:"
+                  data-en="Activity:"
+                >
+                  Actividad:
+                </strong>
+                <span
+                  data-es=" Producción y exportación de melón y sandía."
+                  data-en=" Production and export of melon and watermelon."
+                >
+                  Producción y exportación de melón y sandía.
+                </span>
+              </li>
+              <li>
+                <strong
+                  data-es="Mercado:"
+                  data-en="Market:"
+                >
+                  Mercado:
+                </strong>
+                <span
+                  data-es=" Clientes internacionales de alto estándar."
+                  data-en=" High-standard international clients."
+                >
+                  Clientes internacionales de alto estándar.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="empresa-card">
+            <h4
+              data-es="Certificaciones"
+              data-en="Certifications"
+            >
+              Certificaciones
+            </h4>
+            <p
+              class="small"
+              data-es="Aquí podés agregar detalles de certificaciones, programas de calidad, cumplimiento normativo, etc."
+              data-en="Here you can add details about certifications, quality programs, regulatory compliance, etc."
+            >
+              Aquí podés agregar detalles de certificaciones, programas de calidad,
+              cumplimiento normativo, etc.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 🔹 SECCIÓN MAPA -->
+    <section class="section section--mapa">
+      <div class="container">
+        <h2
+          class="mb-3"
+          data-es="Ubicación en el mapa"
+          data-en="Location on the map"
+        >
+          Ubicación en el mapa
+        </h2>
+        <p class="mb-4">
+          <span
+            data-es="Nos encontramos en"
+            data-en="We are located in"
+          >
+            Nos encontramos en
+          </span>
+          <strong
+            data-es=" Pilas de Cangel, Puntarenas, Costa Rica"
+            data-en=" Pilas de Cangel, Puntarenas, Costa Rica"
+          >
+            Pilas de Cangel,Puntarenas, Costa Rica
+          </strong>.
+        </p>
+        <div class="mapa-iframe-wrapper">
+          <iframe
+            src="https://www.google.com/maps?q=Pilas+de+Cangel,+Puntarenas,+Costa+Rica&output=embed"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- INFO DE INTERÉS -->
+  <section class="info-interest">
+    <div class="container wrap">
+      <strong
+        data-es="Información de Interés"
+        data-en="Information of Interest"
+      >
+        Información de Interés
+      </strong>
+      <div class="social">
+        <a href="#" class="social-facebook" target="_blank">
+          <span data-es="Facebook" data-en="Facebook">Facebook</span>
+        </a>
+        <a href="#" class="social-linkedin" target="_blank">
+          <span data-es="LinkedIn" data-en="LinkedIn">LinkedIn</span>
+        </a>
+        <a href="#" class="social-youtube" target="_blank">
+          <span data-es="YouTube" data-en="YouTube">YouTube</span>
+        </a>
+        <a href="contacto.html" class="social-contact">
+          <span
+            data-es="Contacte un agente"
+            data-en="Contact an agent"
+          >
+            Contacte un agente
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container cols">
+      <div>
+        <strong
+          data-es="Producir, comercializar y exportar"
+          data-en="Produce, market, and export"
+        >
+          Producir, comercializar y exportar
+        </strong>
+        <div
+          class="copy"
+          data-es="Un producto que cumpla estándares nacionales e internacionales mediante controles de procesos y valor agregado con apoyo de un personal competitivo."
+          data-en="A product that meets national and international standards through process controls and added value, supported by a competitive staff."
+        >
+          Un producto que cumpla estándares nacionales e internacionales
+          mediante controles de procesos y valor agregado con apoyo de un
+          personal competitivo.
+        </div>
+        <div class="copy">
+          © <span id="year"></span>
+          <span
+            data-es="Somos Tierra Azul"
+            data-en="We are Tierra Azul"
+          >
+            Somos Tierra Azul
+          </span>
+        </div>
+      </div>
+
+      <div>
+        <strong
+          data-es="DIRECCIÓN"
+          data-en="ADDRESS"
+        >
+          DIRECCIÓN
+        </strong>
+        <div class="copy">
+          <span
+            data-es="Ubicación: Pilas de Cangel, Puntarenas, Costa Rica."
+            data-en="Location: Pilas de Cangel, Puntarenas, Costa Rica."
+          >
+            Ubicación: Pilas de Cangel, Puntarenas, Costa Rica.
+          </span>
+          <br />
+          <span
+            data-es="Correo: waju@grupopenca.com"
+            data-en="Email: waju@grupopenca.com"
+          >
+            Correo: waju@grupopenca.com
+          </span>
+          <br />
+          <span
+            data-es="Teléfono: +506 45002389"
+            data-en="Phone: +506 45002389"
+          >
+            Teléfono: +506 45002389
+          </span>
+        </div>
+        <div class="copy">
+          <a href="documentos.html">
+            <span
+              data-es="Documentos (PDF)"
+              data-en="Documents (PDF)"
+            >
+              Documentos (PDF)
+            </span>
+          </a>
+          ·
+          <a href="contacto.html">
+            <span data-es="Contacto" data-en="Contact">Contacto</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://kit.fontawesome.com/739c16c71e.js" crossorigin="anonymous"></script>
+  <script src="js/header.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ once: true });</script>
+
+  <!-- 🔵 Traducción global -->
+  <script src="js/translate.js"></script>
+</body>
+</html>

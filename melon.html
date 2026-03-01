@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tierra Azul 1981 S.A - Melón</title>
+
+    <!-- Fuentes / librerías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS de terceros -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- CSS propios -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/melon.css" />
+  </head>
+
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar2">
+      <div class="container topbar2__wrap">
+        <div class="topbar2__item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span
+            data-es="Pilas de Cangel, Puntarenas, Costa Rica."
+            data-en="Pilas de Cangel, Puntarenas, Costa Rica."
+          >
+            Pilas de Cangel, Puntarenas, Costa Rica.
+          </span>
+        </div>
+
+        <div class="topbar2__right">
+          <a class="topbar2__item" href="mailto:waju@grupopenca.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span data-es="waju@grupopenca.com" data-en="waju@grupopenca.com">
+              waju@grupopenca.com
+            </span>
+          </a>
+          <a class="topbar2__item" href="tel:+50645002389">
+            <i class="fa-solid fa-phone"></i>
+            <span data-es="+506 45002389" data-en="+506 45002389">
+              +506 45002389
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER AMARILLO -->
+    <header class="header2" id="siteHeader">
+      <div class="container header2__wrap">
+        <a class="header2__brand" href="index.html" aria-label="Inicio">
+          <span class="brand-text">
+            <span class="brand-name">
+              <span class="brand-tierra">TIERRA</span>
+              <span class="brand-azul">AZUL</span>
+            </span>
+            <span class="brand-sub">1981 S.A</span>
+          </span>
+        </a>
+
+        <div class="header2__right">
+          <div class="header2__social">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#" aria-label="WhatsApp">
+              <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+
+          <!-- Botón hamburguesa (móvil) -->
+          <button
+            class="nav2__toggle"
+            id="navToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- NAV DESKTOP -->
+      <div class="nav2" id="navBar">
+        <nav class="nav2__box" aria-label="Menú principal">
+          <a class="nav2__link" href="index.html">
+            <span data-es="Inicio" data-en="Home">Inicio</span>
+          </a>
+
+          <div class="nav2__dropdown" id="dropNosotros">
+            <a class="nav2__link nav2__dropbtn" href="#">
+              <span data-es="Nosotros" data-en="About Us">Nosotros</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <div class="nav2__submenu" id="subNosotros">
+              <a href="empresa.html">
+                <span data-es="Empresa" data-en="Company">Empresa</span>
+              </a>
+              <a href="estrategia.html">
+                <span data-es="Estrategia" data-en="Strategy">Estrategia</span>
+              </a>
+              <a href="equipo.html">
+                <span data-es="Calidad" data-en="Quality">Calidad</span>
+              </a>
+            </div>
+          </div>
+
+          <a class="nav2__link" href="responsabilidad-social.html">
+            <span
+              data-es="Responsabilidad Social"
+              data-en="Social Responsibility"
+            >
+              Responsabilidad Social
+            </span>
+          </a>
+          <a class="nav2__link" href="productos.html">
+            <span data-es="Productos" data-en="Products">Productos</span>
+          </a>
+          <a class="nav2__link" href="noticias.html">
+            <span data-es="Noticias" data-en="News">Noticias</span>
+          </a>
+          <a class="nav2__link" href="contacto.html">
+            <span data-es="Contacto" data-en="Contact">Contacto</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- PANEL MÓVIL -->
+      <div class="nav2__backdrop" id="navBackdrop"></div>
+      <aside class="nav2__panel" id="navPanel" aria-label="Menú móvil">
+        <div class="nav2__panelHead">
+          <span class="nav2__panelTitle" data-es="Menú" data-en="Menu">
+            Menú
+          </span>
+          <button class="nav2__close" id="navClose" aria-label="Cerrar menú">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="nav2__panelBody">
+          <a class="nav2__mLink" href="index.html">
+            <span data-es="Inicio" data-en="Home">Inicio</span>
+          </a>
+
+          <button
+            class="nav2__mDrop"
+            type="button"
+            data-submenu="msubNosotros"
+            aria-expanded="false"
+          >
+            <span data-es="Nosotros" data-en="About Us">Nosotros</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav2__mSub" id="msubNosotros">
+            <a href="empresa.html">
+              <span data-es="Empresa" data-en="Company">Empresa</span>
+            </a>
+            <a href="estrategia.html">
+              <span data-es="Estrategia" data-en="Strategy">Estrategia</span>
+            </a>
+            <a href="equipo.html">
+              <span data-es="Calidad" data-en="Quality">Calidad</span>
+            </a>
+          </div>
+
+          <a class="nav2__mLink" href="responsabilidad-social.html">
+            <span
+              data-es="Responsabilidad Social"
+              data-en="Social Responsibility"
+            >
+              Responsabilidad Social
+            </span>
+          </a>
+          <a class="nav2__mLink" href="productos.html">
+            <span data-es="Productos" data-en="Products">Productos</span>
+          </a>
+          <a class="nav2__mLink" href="noticias.html">
+            <span data-es="Noticias" data-en="News">Noticias</span>
+          </a>
+          <a class="nav2__mLink" href="contacto.html">
+            <span data-es="Contacto" data-en="Contact">Contacto</span>
+          </a>
+        </div>
+      </aside>
+    </header>
+
+    <!-- Separador sticky -->
+    <div class="page-start"></div>
+
+    <main>
+      <!-- HERO MELÓN -->
+      <section class="inner-hero inner-hero--melon">
+        <div class="inner-hero__overlay"></div>
+        <div class="container inner-hero__content">
+          <div class="inner-hero__heading">
+            <h1 class="inner-hero__title" data-es="Melónes" data-en="Melons">
+              Melones
+            </h1>
+
+            <!-- Divider debajo del título -->
+            <div class="hero-divider"></div>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- FICHA INFORMATIVA -->
+      <section class="section">
+        <div class="container">
+          <div class="section-top text-center" data-aos="fade-up">
+            <h2
+              class="section-title"
+              data-es="Ficha informativa del producto"
+              data-en="Product factsheet"
+            >
+              Ficha informativa del producto
+            </h2>
+            <p
+              class="section-subtitle"
+              data-es="Información técnica y comercial del melón que producimos y exportamos."
+              data-en="Technical and commercial information about the melon we produce and export."
+            >
+              Información técnica y comercial del melón que producimos y
+              exportamos.
+            </p>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="producto-layout">
+            <!-- Imagen principal -->
+            <div class="producto-main" data-aos="fade-right">
+              <article class="article-box producto-card">
+                <img
+                  src="assets/melon.jpeg"
+                  alt="Melón Tierra Azul"
+                  class="producto-main-img"
+                  loading="lazy"
+                />
+                <div class="producto-main-caption">
+                  <h3 data-es="Melón amarillo" data-en="Yellow melon">
+                    Melón amarillo
+                  </h3>
+                  <p
+                    data-es="Fruta fresca seleccionada en campo y empacada bajo estrictos controles de calidad e inocuidad."
+                    data-en="Fresh fruit selected in the field and packed under strict quality and food safety controls."
+                  >
+                    Fruta fresca seleccionada en campo y empacada bajo estrictos
+                    controles de calidad e inocuidad.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tabla informativa -->
+            <aside class="producto-side" data-aos="fade-left">
+              <article class="article-box producto-info">
+                <h3
+                  class="producto-info-title"
+                  data-es="Características del melón"
+                  data-en="Melon characteristics"
+                >
+                  Características del melón
+                </h3>
+
+                <dl class="producto-table">
+                  <div>
+                    <dt data-es="Nombre" data-en="Name">Nombre</dt>
+                    <dd
+                      data-es="Melón (Cucumis melo); variedades amarillas."
+                      data-en="Melon (Cucumis melo); yellow varieties."
+                    >
+                      Melón (Cucumis melo); variedades amarillas.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt data-es="Descripción" data-en="Description">
+                      Descripción
+                    </dt>
+                    <dd
+                      data-es="Fruta de forma ovalada, cáscara amarilla, piel lisa y pulpa jugosa de color crema, dulce y aromática."
+                      data-en="Oval-shaped fruit with yellow rind, smooth skin and juicy cream-colored flesh, sweet and aromatic."
+                    >
+                      Fruta de forma ovalada, cáscara amarilla, piel lisa y
+                      pulpa jugosa de color crema, dulce y aromática.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt data-es="Composición" data-en="Composition">
+                      Composición
+                    </dt>
+                    <dd
+                      data-es="Alto contenido de agua, carbohidratos, fibra, vitaminas A y C, además de minerales esenciales."
+                      data-en="High water content, carbohydrates, fiber, vitamins A and C, and essential minerals."
+                    >
+                      Alto contenido de agua, carbohidratos, fibra, vitaminas A
+                      y C, además de minerales esenciales.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt
+                      data-es="Propiedades fisicoquímicas"
+                      data-en="Physicochemical properties"
+                    >
+                      Propiedades fisicoquímicas
+                    </dt>
+                    <dd
+                      data-es="Fruta firme, con sólidos solubles adecuados para un sabor dulce y uniforme, libre de daños que afecten su vida de anaquel."
+                      data-en="Firm fruit with soluble solids suitable for a sweet and consistent flavor, free from damage that could reduce shelf life."
+                    >
+                      Fruta firme, con sólidos solubles adecuados para un sabor
+                      dulce y uniforme, libre de daños que afecten su vida de
+                      anaquel.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt data-es="Tratamiento" data-en="Treatment">
+                      Tratamiento
+                    </dt>
+                    <dd
+                      data-es="Aplicación de tratamientos poscosecha autorizados para proteger la fruta frente a hongos y bacterias."
+                      data-en="Application of approved postharvest treatments to protect the fruit against fungi and bacteria."
+                    >
+                      Aplicación de tratamientos poscosecha autorizados para
+                      proteger la fruta frente a hongos y bacterias.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt data-es="Empaque" data-en="Packaging">Empaque</dt>
+                    <dd
+                      data-es="Melones empacados en cajas de cartón con peso y calibre controlados, listos para exportación."
+                      data-en="Melons packed in cardboard boxes with controlled weight and size, ready for export."
+                    >
+                      Melones empacados en cajas de cartón con peso y calibre
+                      controlados, listos para exportación.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt data-es="Almacenamiento" data-en="Storage">
+                      Almacenamiento
+                    </dt>
+                    <dd
+                      data-es="Paletizado y almacenamiento en condiciones que mantienen la integridad de la fruta."
+                      data-en="Palletized and stored under conditions that maintain the fruit's integrity."
+                    >
+                      Paletizado y almacenamiento en condiciones que mantienen
+                      la integridad de la fruta.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt data-es="Transporte" data-en="Transport">Transporte</dt>
+                    <dd
+                      data-es="En contenedores refrigerados, de acuerdo con los requerimientos del cliente."
+                      data-en="In refrigerated containers, according to the customer's requirements."
+                    >
+                      En contenedores refrigerados, de acuerdo con los
+                      requerimientos del cliente.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt data-es="Vida útil" data-en="Shelf life">Vida útil</dt>
+                    <dd
+                      data-es="Bajo condiciones de refrigeración adecuadas, el melón mantiene sus características por varias semanas después de la cosecha."
+                      data-en="Under proper refrigeration, melon keeps its characteristics for several weeks after harvest."
+                    >
+                      Bajo condiciones de refrigeración adecuadas, el melón
+                      mantiene sus características por varias semanas después de
+                      la cosecha.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt data-es="Tipo de consumidor" data-en="Type of consumer">
+                      Tipo de consumidor
+                    </dt>
+                    <dd
+                      data-es="Producto dirigido a todo tipo de consumidores, ideal para consumo en fresco."
+                      data-en="Product intended for all types of consumers, ideal for fresh consumption."
+                    >
+                      Producto dirigido a todo tipo de consumidores, ideal para
+                      consumo en fresco.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt data-es="Forma de consumo" data-en="Consumption">
+                      Forma de consumo
+                    </dt>
+                    <dd
+                      data-es="Consumo directo como fruta fresca, en ensaladas, jugos o postres."
+                      data-en="Direct consumption as fresh fruit, in salads, juices or desserts."
+                    >
+                      Consumo directo como fruta fresca, en ensaladas, jugos o
+                      postres.
+                    </dd>
+                  </div>
+                </dl>
+              </article>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFICIOS -->
+      <section class="section section-beneficios">
+        <div class="container">
+          <div class="section-top text-center" data-aos="fade-up">
+            <h2
+              class="section-title"
+              data-es="Beneficios de consumir melón"
+              data-en="Benefits of eating melon"
+            >
+              Beneficios de consumir melón
+            </h2>
+            <div class="section-divider"></div>
+          </div>
+
+          <article class="article-box beneficios-box" data-aos="fade-up">
+            <ul class="beneficios-list">
+              <li
+                data-es="Ayuda a la hidratación gracias a su alto contenido de agua y bajo aporte calórico."
+                data-en="Helps hydration thanks to its high water content and low calorie contribution."
+              >
+                Ayuda a la hidratación gracias a su alto contenido de agua y
+                bajo aporte calórico.
+              </li>
+              <li
+                data-es="Aporta antioxidantes y vitaminas que apoyan el sistema inmunológico."
+                data-en="Provides antioxidants and vitamins that support the immune system."
+              >
+                Aporta antioxidantes y vitaminas que apoyan el sistema
+                inmunológico.
+              </li>
+              <li
+                data-es="Su contenido de fibra contribuye a una buena digestión y al bienestar intestinal."
+                data-en="Its fiber content contributes to good digestion and intestinal wellness."
+              >
+                Su contenido de fibra contribuye a una buena digestión y al
+                bienestar intestinal.
+              </li>
+              <li
+                data-es="Es una fruta recomendada para personas que buscan opciones ligeras y refrescantes en su alimentación."
+                data-en="It is a recommended fruit for people looking for light and refreshing options in their diet."
+              >
+                Es una fruta recomendada para personas que buscan opciones
+                ligeras y refrescantes en su alimentación.
+              </li>
+              <li
+                data-es="Puede formar parte de planes de alimentación equilibrados para diferentes etapas de la vida."
+                data-en="Can be part of balanced eating plans for different stages of life."
+              >
+                Puede formar parte de planes de alimentación equilibrados para
+                diferentes etapas de la vida.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- INFO DE INTERÉS -->
+      <section class="info-interest">
+        <div class="container wrap">
+          <strong
+            data-es="Información de Interés"
+            data-en="Information of Interest"
+          >
+            Información de Interés
+          </strong>
+          <div class="social">
+            <a href="#" class="social-facebook" target="_blank">
+              <span data-es="Facebook" data-en="Facebook">Facebook</span>
+            </a>
+            <a href="#" class="social-linkedin" target="_blank">
+              <span data-es="LinkedIn" data-en="LinkedIn">LinkedIn</span>
+            </a>
+            <a href="#" class="social-youtube" target="_blank">
+              <span data-es="YouTube" data-en="YouTube">YouTube</span>
+            </a>
+            <a href="contacto.html" class="social-contact">
+              <span data-es="Contacte un agente" data-en="Contact an agent">
+                Contacte un agente
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container cols">
+        <div>
+          <strong
+            data-es="Producir, comercializar y exportar"
+            data-en="Produce, market, and export"
+          >
+            Producir, comercializar y exportar
+          </strong>
+          <div
+            class="copy"
+            data-es="Un producto que cumpla estándares nacionales e internacionales mediante controles de procesos y valor agregado con apoyo de un personal competitivo."
+            data-en="A product that meets national and international standards through process controls and added value, supported by a competitive staff."
+          >
+            Un producto que cumpla estándares nacionales e internacionales
+            mediante controles de procesos y valor agregado con apoyo de un
+            personal competitivo.
+          </div>
+          <div class="copy">
+            © <span id="year"></span>
+            <span data-es="Tierra Azul" data-en="Tierra Azul">
+              Tierra Azul
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <strong data-es="DIRECCIÓN" data-en="ADDRESS">DIRECCIÓN</strong>
+          <div class="copy">
+            <span
+              data-es="Ubicación: Pilas de Cangel, Puntarenas, Costa Rica."
+              data-en="Location: Pilas de Cangel, Puntarenas, Costa Rica."
+            >
+              Ubicación: Pilas de Cangel, Puntarenas, Costa Rica.
+            </span>
+            <br />
+            <span
+              data-es="Correo: waju@grupop.com"
+              data-en="Email: waju@grupop.com"
+            >
+              Correo: waju@grupop.com
+            </span>
+            <br />
+            <span
+              data-es="Teléfono: +506 45002389"
+              data-en="Phone: +506 45002389"
+            >
+              Teléfono: +506 45002389
+            </span>
+          </div>
+          <div class="copy">
+            <a href="documentos.html">
+              <span data-es="Documentos (PDF)" data-en="Documents (PDF)">
+                Documentos (PDF)
+              </span>
+            </a>
+            ·
+            <a href="contacto.html">
+              <span data-es="Contacto" data-en="Contact">Contacto</span>
+            </a>
+            ·
+            <a href="privacidad.html">
+              <span data-es="Política de Privacidad" data-en="Privacy Policy">
+                Política de Privacidad
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS LIBRERÍAS -->
+    <script
+      src="https://kit.fontawesome.com/739c16c71e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- JS PROPIOS -->
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <!-- traducir -->
+    <script src="js/translate.js"></script>
+
+    <script>
+      AOS.init({ once: true });
+    </script>
+  </body>
+</html>

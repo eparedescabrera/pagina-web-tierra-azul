@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tierra Azul 1981 S.A - Estrategia</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper (por si lo usas en otras páginas) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS (animaciones) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preload" as="image" href="assets/estrategia.webp" />
+    <!-- CSS global -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/estrategia.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- TOP BAR -->
+    <div class="topbar2">
+      <div class="container topbar2__wrap">
+        <div class="topbar2__item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span
+            data-es="Pilas de Cangel,Puntarenas, Costa Rica."
+            data-en="Pilas de Cangel, Puntarenas, Costa Rica."
+          >
+            Pilas de Cangel, Puntarenas, Costa Rica.
+          </span>
+        </div>
+
+        <div class="topbar2__right">
+          <a class="topbar2__item" href="mailto:waju@grupopenca.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span
+              data-es="waju@grupopenca.com"
+              data-en="waju@grupopenca.com"
+            >
+              waju@grupopenca.com
+            </span>
+          </a>
+          <a class="topbar2__item" href="tel:+50645002389">
+            <i class="fa-solid fa-phone"></i>
+            <span
+              data-es="+506 45002389"
+              data-en="+506 45002389"
+            >
+              +506 45002389
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER AMARILLO -->
+    <header class="header2" id="siteHeader">
+      <div class="container header2__wrap">
+        <a class="header2__brand" href="index.html" aria-label="Inicio">
+          <span class="brand-text">
+            <span class="brand-name">
+              <span class="brand-tierra">TIERRA</span>
+              <span class="brand-azul">AZUL</span>
+            </span>
+            <span class="brand-sub">1981 S.A</span>
+          </span>
+        </a>
+
+        <div class="header2__right">
+          <div class="header2__social">
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="#" aria-label="WhatsApp"
+              ><i class="fa-brands fa-square-whatsapp"></i
+            ></a>
+            <a href="#" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+
+          <!-- Botón hamburguesa (solo móvil) -->
+          <button
+            class="nav2__toggle"
+            id="navToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- NAV flotante centrado (desktop) -->
+      <div class="nav2" id="navBar">
+        <nav class="nav2__box" aria-label="Menú principal">
+          <a class="nav2__link" href="index.html">
+            <span data-es="Inicio" data-en="Home">Inicio</span>
+          </a>
+
+          <div class="nav2__dropdown" id="dropNosotros">
+            <a class="nav2__link nav2__dropbtn" href="#">
+              <span data-es="Nosotros" data-en="About Us">Nosotros</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <div class="nav2__submenu" id="subNosotros">
+              <a href="empresa.html">
+                <span data-es="Empresa" data-en="Company">Empresa</span>
+              </a>
+              <a href="estrategia.html">
+                <span data-es="Estrategia" data-en="Strategy">Estrategia</span>
+              </a>
+              <a href="equipo.html">
+                <span data-es="Calidad" data-en="Quality">Calidad</span>
+              </a>
+            </div>
+          </div>
+
+          <a class="nav2__link" href="responsabilidad-social.html">
+            <span
+              data-es="Responsabilidad Social"
+              data-en="Social Responsibility"
+            >
+              Responsabilidad Social
+            </span>
+          </a>
+          <a class="nav2__link" href="productos.html">
+            <span data-es="Productos" data-en="Products">Productos</span>
+          </a>
+          <a class="nav2__link" href="noticias.html">
+            <span data-es="Noticias" data-en="News">Noticias</span>
+          </a>
+          <a class="nav2__link" href="contacto.html">
+            <span data-es="Contacto" data-en="Contact">Contacto</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- PANEL MÓVIL (overlay) -->
+      <div class="nav2__backdrop" id="navBackdrop"></div>
+
+      <aside class="nav2__panel" id="navPanel" aria-label="Menú móvil">
+        <div class="nav2__panelHead">
+          <span
+            class="nav2__panelTitle"
+            data-es="Menú"
+            data-en="Menu"
+          >
+            Menú
+          </span>
+          <button class="nav2__close" id="navClose" aria-label="Cerrar menú">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="nav2__panelBody">
+          <a class="nav2__mLink" href="index.html">
+            <span data-es="Inicio" data-en="Home">Inicio</span>
+          </a>
+          <!-- SOLO "NOSOTROS" TIENE SUBMENU EN MÓVIL -->
+          <button
+            class="nav2__mDrop"
+            type="button"
+            data-submenu="msubNosotros"
+            aria-expanded="false"
+          >
+            <span data-es="Nosotros" data-en="About Us">Nosotros</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav2__mSub" id="msubNosotros">
+            <a href="empresa.html">
+              <span data-es="empresa" data-en="company">empresa</span>
+            </a>
+            <a href="estrategia.html">
+              <span data-es="estrategia" data-en="strategy">estrategia</span>
+            </a>
+            <a href="calidad.html">
+              <span data-es="calidad" data-en="quality">calidad</span>
+            </a>
+          </div>
+
+          <!-- LINKS NORMALES -->
+          <a class="nav2__mLink" href="responsabilidad-social.html">
+            <span
+              data-es="Responsabilidad Social"
+              data-en="Social Responsibility"
+            >
+              Responsabilidad Social
+            </span>
+          </a>
+          <a class="nav2__mLink" href="productos.html">
+            <span data-es="Productos" data-en="Products">Productos</span>
+          </a>
+          <a class="nav2__mLink" href="noticias.html">
+            <span data-es="Noticias" data-en="News">Noticias</span>
+          </a>
+          <a class="nav2__mLink" href="contacto.html">
+            <span data-es="Contacto" data-en="Contact">Contacto</span>
+          </a>
+        </div>
+      </aside>
+    </header>
+
+    <!-- Para que el contenido no se meta debajo del nav flotante -->
+    <div class="page-start"></div>
+
+    <main>
+      <!-- HERO INTERNO -->
+      <section class="inner-hero inner-hero--estrategia">
+        <div class="hero-center">
+          <div class="circle-solid">
+            <span data-es="TIERRA" data-en="TIERRA">TIERRA</span>
+            <span data-es="AZUL" data-en="AZUL">AZUL</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTENIDO: Misión, Visión, Valores, Objetivo, Contacto -->
+      <section class="section">
+        <div class="container">
+          <!-- Encabezado tipoTierra Azul  1981 S.A -->
+          <div class="section-top text-center" data-aos="fade-up">
+            <h2
+              class="section-title"
+              data-es="Estrategia Corporativa"
+              data-en="Corporate Strategy"
+            >
+              Estrategia Corporativa
+            </h2>
+            <p
+              class="section-subtitle"
+              data-es="Tierra Azul 1981 S.A"
+              data-en="Tierra Azul 1981 S.A"
+            >
+              Tierra Azul 1981 S.A
+            </p>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="row g-5">
+            <!-- Columna principal: Misión, Visión, Objetivo, Contacto -->
+            <div class="col-lg-8">
+              <article class="mb-4 article-box" id="mision">
+                <h3 data-es="Misión" data-en="Mission">Misión</h3>
+                <p
+                  data-es="Tierra Azul 1981 S.A se dedica a la producción, comercialización y exportación de melones y sandías que cumplen las exigencias del mercado internacional. Aplicamos prácticas agrícolas y de manufactura innovadoras y sostenibles, respaldadas por un equipo humano integral que contribuye al bienestar ambiental y social."
+                  data-en="Tierra Azul 1981 S.A is dedicated to the production, commercialization, and export of melons and watermelons that meet the demands of the international market. We apply innovative and sustainable agricultural and manufacturing practices, supported by an integral human team that contributes to environmental and social well-being."
+                >
+                  Tierra Azul 1981 S.A se dedica a la producción,
+                  comercialización y exportación de melones y sandías que
+                  cumplen las exigencias del mercado internacional. Aplicamos
+                  prácticas agrícolas y de manufactura innovadoras y
+                  sostenibles, respaldadas por un equipo humano integral que
+                  contribuye al bienestar ambiental y social.
+                </p>
+              </article>
+
+              <article class="mb-4 article-box" id="vision">
+                <h3 data-es="Visión" data-en="Vision">Visión</h3>
+                <p
+                  data-es="Ser una empresa referente en la producción de fruta fresca, construyendo un modelo de negocio social y ambientalmente sostenible, comprometido con satisfacer las necesidades de clientes en mercados globales."
+                  data-en="To be a benchmark company in the production of fresh fruit, building a socially and environmentally sustainable business model, committed to meeting the needs of clients in global markets."
+                >
+                  Ser una empresa referente en la producción de fruta fresca,
+                  construyendo un modelo de negocio social y ambientalmente
+                  sostenible, comprometido con satisfacer las necesidades de
+                  clientes en mercados globales.
+                </p>
+              </article>
+
+              <article class="mb-4 article-box" id="objetivo">
+                <h3
+                  data-es="Objetivo General"
+                  data-en="General Objective"
+                >
+                  Objetivo General
+                </h3>
+                <p
+                  data-es="Producir, comercializar y exportar un producto que cumpla con estándares nacionales e internacionales mediante controles de procesos y valor agregado, apoyados por un personal competitivo y comprometido."
+                  data-en="To produce, commercialize, and export a product that meets national and international standards through process controls and added value, supported by a competitive and committed staff."
+                >
+                  Producir, comercializar y exportar un producto que cumpla con
+                  estándares nacionales e internacionales mediante controles de
+                  procesos y valor agregado, apoyados por un personal
+                  competitivo y comprometido.
+                </p>
+              </article>
+
+              <article class="mb-4 article-box" id="contacto">
+                <h3 data-es="Contacto" data-en="Contact">Contacto</h3>
+                <p
+                  data-es="Escríbanos por medio de nuestro formulario de contacto, correo electrónico o teléfono. Estamos para servirle y atender todas sus consultas."
+                  data-en="Write to us through our contact form, email, or phone. We are here to serve you and answer all your inquiries."
+                >
+                  Escríbanos por medio de nuestro formulario de contacto, correo
+                  electrónico o teléfono. Estamos para servirle y atender todas
+                  sus consultas.
+                </p>
+                <a class="btn btn-warning btn-sm px-3" href="contacto.html">
+                  <strong
+                    data-es="Ir a contacto"
+                    data-en="Go to contact"
+                  >
+                    Ir a contacto
+                  </strong>
+                </a>
+              </article>
+            </div>
+
+            <!-- Columna lateral: Valores (como listado) -->
+            <aside class="col-lg-4">
+              <div class="empresa-card mb-4 article-box">
+                <h4 data-es="Valores" data-en="Values">Valores</h4>
+                <p
+                  class="small"
+                  data-es="Además de entregar productos de calidad, en Tierra Azul promovemos un ambiente de trabajo basado en principios que fortalecen la relación con colaboradores y clientes:"
+                  data-en="In addition to delivering quality products, at Tierra Azul we promote a work environment based on principles that strengthen the relationship with collaborators and clients:"
+                >
+                  Además de entregar productos de calidad, en Tierra Azul
+                  promovemos un ambiente de trabajo basado en principios que
+                  fortalecen la relación con colaboradores y clientes:
+                </p>
+                <ul>
+                  <li
+                    data-es="Trabajo en equipo"
+                    data-en="Teamwork"
+                  >
+                    Trabajo en equipo
+                  </li>
+                  <li
+                    data-es="Mejora continua"
+                    data-en="Continuous improvement"
+                  >
+                    Mejora continua
+                  </li>
+                  <li
+                    data-es="Sostenibilidad"
+                    data-en="Sustainability"
+                  >
+                    Sostenibilidad
+                  </li>
+                  <li
+                    data-es="Comunicación"
+                    data-en="Communication"
+                  >
+                    Comunicación
+                  </li>
+                  <li
+                    data-es="Integridad"
+                    data-en="Integrity"
+                  >
+                    Integridad
+                  </li>
+                  <li
+                    data-es="Enfoque al cliente"
+                    data-en="Customer focus"
+                  >
+                    Enfoque al cliente
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Card extra -->
+              <div class="empresa-card article-box">
+                <h4
+                  data-es="Pilares estratégicos"
+                  data-en="Strategic pillars"
+                >
+                  Pilares estratégicos
+                </h4>
+                <p
+                  class="small"
+                  data-es="Calidad e inocuidad, sostenibilidad ambiental, bienestar de colaboradores y cercanía con las comunidades de Guanacaste."
+                  data-en="Quality and safety, environmental sustainability, employee well-being, and closeness to the communities of Guanacaste."
+                >
+                  Calidad e inocuidad, sostenibilidad ambiental, bienestar de
+                  colaboradores y cercanía con las comunidades de Guanacaste.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- INFO DE INTERÉS (igual que index) -->
+      <section class="info-interest article-box">
+        <div class="container wrap">
+          <strong
+            data-es="Información de Interés"
+            data-en="Information of Interest"
+          >
+            Información de Interés
+          </strong>
+          <div class="social">
+            <a href="#" class="social-facebook" target="_blank">
+              <span data-es="Facebook" data-en="Facebook">Facebook</span>
+            </a>
+            <a href="#" class="social-linkedin" target="_blank">
+              <span data-es="LinkedIn" data-en="LinkedIn">LinkedIn</span>
+            </a>
+            <a href="#" class="social-youtube" target="_blank">
+              <span data-es="YouTube" data-en="YouTube">YouTube</span>
+            </a>
+            <a href="contacto.html" class="social-contact">
+              <span
+                data-es="Contacte un agente"
+                data-en="Contact an agent"
+              >
+                Contacte un agente
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container cols">
+        <div>
+          <strong
+            data-es="Producir, comercializar y exportar"
+            data-en="Produce, market, and export"
+          >
+            Producir, comercializar y exportar
+          </strong>
+          <div
+            class="copy"
+            data-es="Un producto que cumpla estándares nacionales e internacionales mediante controles de procesos y valor agregado con apoyo de un personal competitivo."
+            data-en="A product that meets national and international standards through process controls and added value, supported by a competitive staff."
+          >
+            Un producto que cumpla estándares nacionales e internacionales
+            mediante controles de procesos y valor agregado con apoyo de un
+            personal competitivo.
+          </div>
+          <div class="copy">
+            © <span id="year"></span>
+            <span
+              data-es="Pura Vida Melons"
+              data-en="Pura Vida Melons"
+            >
+             Tierra Azul  1981 S.A
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <strong data-es="DIRECCIÓN" data-en="ADDRESS">DIRECCIÓN</strong>
+          <div class="copy">
+            <span
+              data-es="Ubicación: Pilas de Canjel, Puntarenas, Costa Rica."
+              data-en="Location: Pilas de Canjel, Puntarenas, Costa Rica."
+            >
+              Ubicación: Pilas de Canjel, Puntarenas, Costa Rica.
+            </span>
+            <br />
+            <span
+              data-es="Correo: waju@grupopenca.com"
+              data-en="Email: waju@grupopenca.com"
+            >
+              Correo: waju@grupopenca.com
+            </span>
+            <br />
+            <span
+              data-es="Teléfono: +506 506 45002389"
+              data-en="Phone: +506 506 45002389"
+            >
+              Teléfono: +506 506 45002389
+            </span>
+          </div>
+          <div class="copy">
+            <a href="documentos.html">
+              <span
+                data-es="Documentos (PDF)"
+                data-en="Documents (PDF)"
+              >
+                Documentos (PDF)
+              </span>
+            </a>
+            ·
+            <a href="contacto.html">
+              <span data-es="Contacto" data-en="Contact">Contacto</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script
+      src="https://kit.fontawesome.com/739c16c71e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({ once: true });
+      // Aquí NO inicializamos Swiper porque esta página no lo usa.
+      // Si quisieras un slider también en Estrategia, se puede agregar luego.
+    </script>
+
+    <!-- 🔵 Traducción -->
+    <script src="js/translate.js"></script>
+  </body>
+</html>                                                   

@@ -1,0 +1,124 @@
+/* ======================
+   EMPRESA
+====================== */
+
+/* Hero interno genérico (puede reutilizarse en otras páginas cambiando la imagen) */
+.inner-hero{
+  position: relative;
+  min-height: 260px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:#fff;
+}
+
+.inner-hero__overlay{
+  position:absolute;
+  inset:0;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,.70) 0%,
+    rgba(0,0,0,.55) 40%,
+    rgba(0,0,0,.15) 100%
+  );
+}
+
+.inner-hero__content{
+  position:relative;
+  z-index:1;
+  max-width:720px;
+  padding:40px 0;
+}
+
+.inner-hero__title{
+  margin:0;
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight:1000;
+  letter-spacing:-.02em;
+}
+
+.inner-hero__subtitle{
+  margin-top:12px;
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight:600;
+}
+
+/* Imagen de fondo específica de EMPRESA */
+.inner-hero--empresa{
+  background-image:url("../assets/empresa.jpeg"); /* cambia por la que quieras */
+}
+
+/* Layout de texto + aside */
+.empresa-layout{
+  display:grid;
+  grid-template-columns: minmax(0,2fr) minmax(0,1fr);
+  gap:24px;
+}
+
+.empresa-texto h2{
+  margin-top:0;
+  margin-bottom:12px;
+}
+
+.empresa-texto h3{
+  margin-top:24px;
+  margin-bottom:10px;
+}
+
+.empresa-texto p{
+  margin-bottom:10px;
+}
+
+.empresa-texto ul{
+  padding-left:18px;
+}
+
+.empresa-side{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.empresa-card{
+  border-radius:18px;
+  border:1px solid var(--line);
+  background:#fff;
+  padding:16px 18px;
+  box-shadow:0 12px 28px rgba(15,23,42,.06);
+}
+
+.empresa-card h4{
+  margin-top:0;
+  margin-bottom:8px;
+  font-weight:900;
+}
+
+/* Responsive */
+@media (max-width: 880px){
+  .empresa-layout{
+    grid-template-columns:1fr;
+  }
+}
+.section--mapa .mapa-iframe-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(2, 6, 23, .12);
+}
+
+.section--mapa iframe {
+  border: 0;
+  width: 100%;
+  height: 380px;
+}
+.article-box {
+  background: rgba(255, 255, 255, 0.6);       /* efecto translúcido */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* bordes suaves */
+  backdrop-filter: blur(8px);                 /* efecto glass */
+  padding: 25px 28px;
+  border-radius: 14px;                        /* bordes redondos */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* sombra elegante */
+  transition: all 0.25s ease;
+}
