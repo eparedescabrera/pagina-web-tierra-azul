@@ -1,11 +1,914 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>paredes</h1>
-</body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tierra-Azul - Calidad</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper (slider pro, por si en el futuro lo usas aquí) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS (animaciones) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- CSS global -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- CSS específico de esta página -->
+    <link rel="stylesheet" href="css/calidad.css" />
+  </head>
+
+  <body>
+    <!-- TOP BAR (gris oscuro con info) -->
+    <div class="topbar2">
+      <div class="container topbar2__wrap">
+        <div class="topbar2__item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span
+            data-es="Pilas de Cangel, Puntarenas, Costa Rica."
+            data-en="Pilas de Cangel, Puntarenas, Costa Rica."
+          >
+            Pilas de Cangel, Puntarenas, Costa Rica.
+          </span>
+        </div>
+
+        <div class="topbar2__right">
+          <a class="topbar2__item" href="mailto:info@puravidamelons.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span
+              data-es="waju@grupopenca.com"
+              data-en="waju@grupopenca.com"
+            >
+              waju@grupopenca.com
+            </span>
+          </a>
+          <a class="topbar2__item" href="tel:+50645002389">
+            <i class="fa-solid fa-phone"></i>
+            <span
+              data-es="+506 45002389"
+              data-en="+506 45002389"
+            >
+              +506 45002389
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER AMARILLO -->
+    <header class="header2" id="siteHeader">
+      <div class="container header2__wrap">
+        <a class="header2__brand" href="index.html" aria-label="Inicio">
+          <span class="brand-text">
+            <span class="brand-name">
+              <span class="brand-tierra">TIERRA</span>
+              <span class="brand-azul">AZUL</span>
+            </span>
+            <span class="brand-sub">1981 S.A</span>
+          </span>
+        </a>
+
+        <div class="header2__right">
+          <div class="header2__social">
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="#" aria-label="WhatsApp"
+              ><i class="fa-brands fa-square-whatsapp"></i
+            ></a>
+            <a href="#" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+
+          <!-- Botón hamburguesa (solo móvil) -->
+          <button
+            class="nav2__toggle"
+            id="navToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- NAV flotante centrado (desktop) -->
+      <div class="nav2" id="navBar">
+        <nav class="nav2__box" aria-label="Menú principal">
+          <a
+            class="nav2__link"
+            href="index.html"
+            data-es="Inicio"
+            data-en="Home"
+          >
+            Inicio
+          </a>
+
+          <div class="nav2__dropdown" id="dropNosotros">
+            <a
+              class="nav2__link nav2__dropbtn"
+              href="#"
+              data-es="Nosotros"
+              data-en="About us"
+            >
+              Nosotros <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <div class="nav2__submenu" id="subNosotros">
+              <a
+                href="empresa.html"
+                data-es="Empresa"
+                data-en="Company"
+              >
+                Empresa
+              </a>
+              <a
+                href="estrategia.html"
+                data-es="Estrategia"
+                data-en="Strategy"
+              >
+                Estrategia
+              </a>
+              <a
+                href="calidad.html"
+                data-es="Calidad"
+                data-en="Quality"
+              >
+                Calidad
+              </a>
+            </div>
+          </div>
+
+          <a
+            class="nav2__link"
+            href="responsabilidad-social.html"
+            data-es="Responsabilidad Social"
+            data-en="Social Responsibility"
+          >
+            Responsabilidad Social
+          </a>
+          <a
+            class="nav2__link"
+            href="productos.html"
+            data-es="Productos"
+            data-en="Products"
+          >
+            Productos
+          </a>
+          <a
+            class="nav2__link"
+            href="noticias.html"
+            data-es="Noticias"
+            data-en="News"
+          >
+            Noticias
+          </a>
+          <a
+            class="nav2__link"
+            href="contacto.html"
+            data-es="Contacto"
+            data-en="Contact"
+          >
+            Contacto
+          </a>
+        </nav>
+      </div>
+
+      <!-- PANEL MÓVIL (overlay) -->
+      <div class="nav2__backdrop" id="navBackdrop"></div>
+
+      <aside class="nav2__panel" id="navPanel" aria-label="Menú móvil">
+        <div class="nav2__panelHead">
+          <span
+            class="nav2__panelTitle"
+            data-es="Menú"
+            data-en="Menu"
+          >
+            Menú
+          </span>
+          <button class="nav2__close" id="navClose" aria-label="Cerrar menú">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="nav2__panelBody">
+          <a
+            class="nav2__mLink"
+            href="index.html"
+            data-es="Inicio"
+            data-en="Home"
+          >
+            Inicio
+          </a>
+
+          <!-- SOLO "NOSOTROS" TIENE SUBMENU EN MÓVIL -->
+          <button
+            class="nav2__mDrop"
+            type="button"
+            data-submenu="msubNosotros"
+            aria-expanded="false"
+          >
+            <span data-es="Nosotros" data-en="About us">Nosotros</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav2__mSub" id="msubNosotros">
+            <a
+              href="empresa.html"
+              data-es="Empresa"
+              data-en="Company"
+            >
+              Empresa
+            </a>
+            <a
+              href="estrategia.html"
+              data-es="Estrategia"
+              data-en="Strategy"
+            >
+              Estrategia
+            </a>
+            <a
+              href="calidad.html"
+              data-es="Calidad"
+              data-en="Quality"
+            >
+              Calidad
+            </a>
+          </div>
+
+          <!-- LINKS NORMALES -->
+          <a
+            class="nav2__mLink"
+            href="responsabilidad-social.html"
+            data-es="Responsabilidad Social"
+            data-en="Social Responsibility"
+          >
+            Responsabilidad Social
+          </a>
+          <a
+            class="nav2__mLink"
+            href="productos.html"
+            data-es="Productos"
+            data-en="Products"
+          >
+            Productos
+          </a>
+          <a
+            class="nav2__mLink"
+            href="noticias.html"
+            data-es="Noticias"
+            data-en="News"
+          >
+            Noticias
+          </a>
+          <a
+            class="nav2__mLink"
+            href="contacto.html"
+            data-es="Contacto"
+            data-en="Contact"
+          >
+            Contacto
+          </a>
+        </div>
+      </aside>
+    </header>
+
+    <!-- Para que el contenido no se meta debajo del nav flotante -->
+    <div class="page-start"></div>
+
+    <!-- ================================
+         BANNER: IMAGEN + CONTACTO
+    ================================= -->
+    <section class="quality-banner">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <!-- Imagen principal -->
+          <div class="col-lg-9">
+            <div
+              class="quality-banner__media"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <!-- 🔁 Cambia la ruta por tu imagen -->
+              <img
+                src="assets/Tierra Azul 1981 S.A.png"
+                alt="Calidad Tierra Azul 1981 S.A"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+
+          <!-- Tarjeta de contacto -->
+          <div class="col-lg-3">
+            <aside
+              class="quality-contact"
+              data-aos="fade-left"
+              data-aos-duration="800"
+            >
+              <h2
+                class="quality-contact__title"
+                data-es="Contacto"
+                data-en="Contact"
+              >
+                Contacto
+              </h2>
+
+              <p
+                class="quality-contact__text"
+                data-es="Escríbanos por este medio, o también por correo electrónico o teléfono. Estamos para servirle y responder cualquiera de sus dudas."
+                data-en="Write to us here, or contact us by email or phone. We are here to help and answer any questions."
+              >
+                Escríbanos por este medio, o también por correo electrónico o
+                teléfono. Estamos para servirle y responder cualquiera de sus
+                dudas.
+              </p>
+
+              <a
+                href="contacto.html"
+                class="quality-contact__btn"
+                data-es="Ir a contacto"
+                data-en="Go to contact"
+              >
+                IR A CONTACTO
+              </a>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+         TEXTO GIS (Sistema Integrado)
+    ================================= -->
+    <section class="section quality-body" id="calidad">
+      <div class="container">
+        <div class="section-head">
+          <h2
+            class="section-title"
+            data-es="Sistema Integrado de Gestión (GIS)"
+            data-en="Integrated Management System (GIS)"
+          >
+            Sistema Integrado de Gestión (GIS)
+          </h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="quality-body__content">
+          <p
+            data-es="En el ámbito actual de las organizaciones, es indudable que los aspectos vinculados a la Calidad, el Medio Ambiente y la Salud y Seguridad Ocupacional se encuentran relacionados e interdependientes. Desatender uno de ellos repercute de forma directa en los otros. Esta circunstancia explica el origen de nuestro Sistema Integrado de Gestión (GIS)."
+            data-en="In today’s organizations, Quality, Environment and Occupational Health and Safety are clearly related and interdependent. Ignoring one of them has a direct effect on the others. This is the origin of our Integrated Management System (GIS)."
+          >
+            En el ámbito actual de las organizaciones, es indudable que los
+            aspectos vinculados a la Calidad, el Medio Ambiente y la Salud y
+            Seguridad Ocupacional se encuentran relacionados e
+            interdependientes. Desatender uno de ellos repercute de forma
+            directa en los otros. Esta circunstancia explica el origen de
+            nuestro Sistema Integrado de Gestión (GIS).
+          </p>
+
+          <p
+            data-es="Para Tierra Azul 1981 S.A es esencial cumplir los requisitos del cliente, mantener un desempeño sustentable respecto del Medio Ambiente y asegurar la Salud y la Seguridad Ocupacional del personal. Todo esto es el resultado de procesos controlados, equipos competentes y una cultura de mejora continua."
+            data-en="For Tierra Azul 1981 S.A it is essential to meet customer requirements, maintain sustainable environmental performance and ensure workers’ Health and Safety. All this is the result of controlled processes, competent teams and a culture of continuous improvement."
+          >
+            Para Tierra Azul 1981 S.A es esencial cumplir los requisitos del
+            cliente, mantener un desempeño sustentable respecto del Medio
+            Ambiente y asegurar la Salud y la Seguridad Ocupacional del
+            personal. Todo esto es el resultado de procesos controlados, equipos
+            competentes y una cultura de mejora continua.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+         SECCIÓN PRINCIPAL: POLÍTICA, BPA, BPM, TRAZABILIDAD, MEJORA, METAS, RAINFOREST
+    ================================= -->
+    <section class="section quality-modern">
+      <div class="container">
+        <div class="row gy-5 align-items-start">
+          <!-- Columna izquierda: Política + pilares -->
+          <div class="col-lg-6">
+            <div class="quality-block">
+              <!-- Política de calidad -->
+              <h2
+                class="quality-block__title"
+                data-es="Política de Calidad"
+                data-en="Quality Policy"
+              >
+                Política de Calidad
+              </h2>
+
+              <p
+                class="quality-block__text"
+                data-es="Somos una empresa orientada a satisfacer las necesidades del mercado y comprometida con ofrecer productos inocuos y de calidad. Nuestra política se fundamenta en la excelencia y en la mejora continua, impulsando el desarrollo integral del talento humano, la innovación en procesos y tecnología, y la comunicación efectiva."
+                data-en="We are a company committed to meeting market needs and delivering safe, high-quality products. Our policy is based on excellence and continuous improvement, promoting the development of our people, process and technology innovation, and effective communication."
+              >
+                Somos una empresa orientada a satisfacer las necesidades del
+                mercado y comprometida con ofrecer productos inocuos y de
+                calidad. Nuestra política se fundamenta en la excelencia y en la
+                mejora continua, impulsando el desarrollo integral del talento
+                humano, la innovación en procesos y tecnología, y la
+                comunicación efectiva.
+              </p>
+
+              <p
+                class="quality-block__text"
+                data-es="Todo esto se realiza dentro de un marco de cumplimiento legal, responsabilidad ambiental y social, que nos permite ser una organización competitiva y sostenible."
+                data-en="All this is carried out within a framework of legal compliance and environmental and social responsibility, which allows us to be a competitive and sustainable organization."
+              >
+                Todo esto se realiza dentro de un marco de cumplimiento legal,
+                responsabilidad ambiental y social, que nos permite ser una
+                organización competitiva y sostenible.
+              </p>
+
+              <!-- Pilares -->
+              <ul class="quality-pillars list-unstyled">
+                <li>
+                  <span class="quality-pillars__icon">
+                    <i class="fa-solid fa-people-group"></i>
+                  </span>
+                  <div>
+                    <h3
+                      data-es="Talento humano capacitado"
+                      data-en="Trained human talent"
+                    >
+                      Talento humano capacitado
+                    </h3>
+                    <p
+                      data-es="Capacitación constante en temas de calidad, inocuidad, seguridad ocupacional y cuidado del ambiente."
+                      data-en="Ongoing training on quality, food safety, occupational safety and environmental care."
+                    >
+                      Capacitación constante en temas de calidad, inocuidad,
+                      seguridad ocupacional y cuidado del ambiente.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span class="quality-pillars__icon">
+                    <i class="fa-solid fa-earth-americas"></i>
+                  </span>
+                  <div>
+                    <h3
+                      data-es="Respeto por el entorno"
+                      data-en="Respect for the environment"
+                    >
+                      Respeto por el entorno
+                    </h3>
+                    <p
+                      data-es="Uso responsable del agua, manejo adecuado del suelo y protección de la biodiversidad local."
+                      data-en="Responsible water use, proper soil management and protection of local biodiversity."
+                    >
+                      Uso responsable del agua, manejo adecuado del suelo y
+                      protección de la biodiversidad local.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span class="quality-pillars__icon">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                  </span>
+                  <div>
+                    <h3
+                      data-es="Cumplimiento normativo"
+                      data-en="Regulatory compliance"
+                    >
+                      Cumplimiento normativo
+                    </h3>
+                    <p
+                      data-es="Operamos bajo la legislación vigente y tomamos como referencia normas y estándares internacionales."
+                      data-en="We operate under current legislation and take international standards and norms as reference."
+                    >
+                      Operamos bajo la legislación vigente y tomamos como
+                      referencia normas y estándares internacionales.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Columna derecha: BPA / BPM / Trazabilidad / Mejora continua + Certificaciones + Rainforest -->
+          <div class="col-lg-6">
+            <div class="quality-grid">
+              <!-- BPA -->
+              <article class="quality-card">
+                <div class="quality-card__icon">
+                  <i class="fa-solid fa-seedling"></i>
+                </div>
+                <h3
+                  data-es="BPA - Buenas Prácticas Agrícolas"
+                  data-en="GAP - Good Agricultural Practices"
+                >
+                  BPA - Buenas Prácticas Agrícolas
+                </h3>
+                <p
+                  data-es="Aplicamos principios y recomendaciones técnicas en la producción, manejo y transporte de la fruta para proteger la higiene, la salud humana y el medio ambiente."
+                  data-en="We apply principles and technical recommendations in fruit production, handling and transport to protect hygiene, human health and the environment."
+                >
+                  Aplicamos principios y recomendaciones técnicas en la
+                  producción, manejo y transporte de la fruta para proteger la
+                  higiene, la salud humana y el medio ambiente.
+                </p>
+                <ul>
+                  <li
+                    data-es="Manejo adecuado de insumos agrícolas"
+                    data-en="Proper management of agricultural inputs"
+                  >
+                    Manejo adecuado de insumos agrícolas
+                  </li>
+                  <li
+                    data-es="Prácticas ecológicamente responsables"
+                    data-en="Environmentally responsible practices"
+                  >
+                    Prácticas ecológicamente responsables
+                  </li>
+                  <li
+                    data-es="Enfoque en inocuidad desde la finca"
+                    data-en="Food safety starting at the farm"
+                  >
+                    Enfoque en inocuidad desde la finca
+                  </li>
+                </ul>
+              </article>
+
+              <!-- BPM -->
+              <article class="quality-card">
+                <div class="quality-card__icon">
+                  <i class="fa-solid fa-industry"></i>
+                </div>
+                <h3
+                  data-es="BPM - Buenas Prácticas de Manufactura"
+                  data-en="GMP - Good Manufacturing Practices"
+                >
+                  BPM - Buenas Prácticas de Manufactura
+                </h3>
+                <p
+                  data-es="En las plantas de empaque seguimos procedimientos estandarizados que aseguran condiciones higiénicas y un manejo correcto del producto."
+                  data-en="In packing plants we follow standardized procedures that ensure hygienic conditions and proper product handling."
+                >
+                  En las plantas de empaque seguimos procedimientos
+                  estandarizados que aseguran condiciones higiénicas y un manejo
+                  correcto del producto.
+                </p>
+                <ul>
+                  <li
+                    data-es="Diseño y flujo adecuados de las instalaciones"
+                    data-en="Proper facility design and process flow"
+                  >
+                    Diseño y flujo adecuados de las instalaciones
+                  </li>
+                  <li
+                    data-es="Programas de higiene y saneamiento"
+                    data-en="Hygiene and sanitation programs"
+                  >
+                    Programas de higiene y saneamiento
+                  </li>
+                  <li
+                    data-es="Base para sistemas de inocuidad alimentaria"
+                    data-en="Basis for food safety systems"
+                  >
+                    Base para sistemas de inocuidad alimentaria
+                  </li>
+                </ul>
+              </article>
+
+              <!-- Trazabilidad -->
+              <article class="quality-card">
+                <div class="quality-card__icon">
+                  <i class="fa-solid fa-route"></i>
+                </div>
+                <h3
+                  data-es="Trazabilidad"
+                  data-en="Traceability"
+                >
+                  Trazabilidad
+                </h3>
+                <p
+                  data-es="Cada lote puede rastrearse desde el campo hasta el cliente final, registrando su historia y ubicación en toda la cadena de producción."
+                  data-en="Each batch can be traced from the field to the final customer, recording its history and location throughout the production chain."
+                >
+                  Cada lote puede rastrearse desde el campo hasta el cliente
+                  final, registrando su historia y ubicación en toda la cadena
+                  de producción.
+                </p>
+                <ul>
+                  <li
+                    data-es="Identificación de finca, parcela y lote"
+                    data-en="Farm, plot and batch identification"
+                  >
+                    Identificación de finca, parcela y lote
+                  </li>
+                  <li
+                    data-es="Registros de cosecha y empaque"
+                    data-en="Harvest and packing records"
+                  >
+                    Registros de cosecha y empaque
+                  </li>
+                  <li
+                    data-es="Seguimiento durante exportación"
+                    data-en="Tracking during export"
+                  >
+                    Seguimiento durante exportación
+                  </li>
+                </ul>
+              </article>
+
+              <!-- Mejora continua -->
+              <article class="quality-card">
+                <div class="quality-card__icon">
+                  <i class="fa-solid fa-arrow-trend-up"></i>
+                </div>
+                <h3
+                  data-es="Mejoras continuas"
+                  data-en="Continuous improvement"
+                >
+                  Mejoras continuas
+                </h3>
+                <p
+                  data-es="Analizamos nuestros procesos y resultados para identificar oportunidades de mejora, implementar acciones correctivas y preventivas y fortalecer la satisfacción de clientes y colaboradores."
+                  data-en="We analyze our processes and results to identify opportunities for improvement, implement corrective and preventive actions and strengthen customer and staff satisfaction."
+                >
+                  Analizamos nuestros procesos y resultados para identificar
+                  oportunidades de mejora, implementar acciones correctivas y
+                  preventivas y fortalecer la satisfacción de clientes y
+                  colaboradores.
+                </p>
+                <ul>
+                  <li
+                    data-es="Indicadores y auditorías internas"
+                    data-en="Indicators and internal audits"
+                  >
+                    Indicadores y auditorías internas
+                  </li>
+                  <li
+                    data-es="Acciones correctivas y preventivas"
+                    data-en="Corrective and preventive actions"
+                  >
+                    Acciones correctivas y preventivas
+                  </li>
+                  <li
+                    data-es="Evaluación de satisfacción del cliente"
+                    data-en="Customer satisfaction assessment"
+                  >
+                    Evaluación de satisfacción del cliente
+                  </li>
+                </ul>
+              </article>
+            </div>
+
+            <!-- Metas y certificaciones -->
+            <div class="quality-cert quality-cert--modern mt-4">
+              <div class="quality-cert__text">
+                <h3
+                  data-es="Nuestras metas y certificaciones"
+                  data-en="Our goals and certifications"
+                >
+                  Nuestras metas y certificaciones
+                </h3>
+                <p
+                  data-es="Trabajamos para consolidarnos como un referente en la zona y el país, aplicando buenas prácticas de cultivo, cuido y cosecha, con énfasis en la gestión ambiental."
+                  data-en="We work to become a benchmark in our region and country, applying good growing, caring and harvesting practices, with a strong focus on environmental management."
+                >
+                  Trabajamos para consolidarnos como un referente en la zona y
+                  el país, aplicando buenas prácticas de cultivo, cuido y
+                  cosecha, con énfasis en la gestión ambiental.
+                </p>
+                <p
+                  data-es="Para respaldar este compromiso nos alineamos con normas internacionales de calidad, ambiente y seguridad alimentaria."
+                  data-en="To support this commitment we align with international standards on quality, environment and food safety."
+                >
+                  Para respaldar este compromiso nos alineamos con normas
+                  internacionales de calidad, ambiente y seguridad alimentaria.
+                </p>
+              </div>
+
+              <div class="quality-cert__badges">
+                <span class="quality-cert-badge">ISO 9001</span>
+                <span class="quality-cert-badge">ISO 14001</span>
+                <span class="quality-cert-badge">ISO 22000</span>
+                <span class="quality-cert-badge">Global G.A.P</span>
+                <span class="quality-cert-badge">BRCGS</span>
+                <span class="quality-cert-badge">SMETA</span>
+                <span class="quality-cert-badge">LEAF Marque</span>
+                <span class="quality-cert-badge">Rainforest Alliance</span>
+              </div>
+            </div>
+
+            <!-- Rainforest Alliance -->
+            <div class="quality-block mt-4">
+              <h3
+                class="quality-block__subtitle"
+                data-es="Rainforest Alliance"
+                data-en="Rainforest Alliance"
+              >
+                Rainforest Alliance
+              </h3>
+              <p
+                class="quality-block__text"
+                data-es="Nos encontramos en una región de gran riqueza forestal y ecosistemas sensibles. Buscamos que nuestra actividad agrícola tenga el menor impacto posible, aplicando buenas prácticas de cultivo y uso responsable de insumos."
+                data-en="We are located in an area of great forest richness and sensitive ecosystems. We seek to keep our agricultural activity’s impact to a minimum by applying good growing practices and responsible use of inputs."
+              >
+                Nos encontramos en una región de gran riqueza forestal y
+                ecosistemas sensibles. Buscamos que nuestra actividad agrícola
+                tenga el menor impacto posible, aplicando buenas prácticas de
+                cultivo y uso responsable de insumos.
+              </p>
+              <p
+                class="quality-block__text"
+                data-es="La capacitación y certificación con Rainforest Alliance forma parte de nuestra meta de ser una empresa plenamente amigable con el ambiente."
+                data-en="Training and certification with Rainforest Alliance are part of our goal to be a truly environmentally friendly company."
+              >
+                La capacitación y certificación con Rainforest Alliance forma
+                parte de nuestra meta de ser una empresa plenamente amigable con
+                el ambiente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO DE INTERÉS -->
+    <section class="info-interest">
+      <div class="container wrap">
+        <strong
+          data-es="Información de Interés"
+          data-en="Information of Interest"
+        >
+          Información de Interés
+        </strong>
+        <div class="social">
+          <a href="#" class="social-facebook" target="_blank">Facebook</a>
+          <a href="#" class="social-linkedin" target="_blank">LinkedIn</a>
+          <a href="#" class="social-youtube" target="_blank">YouTube</a>
+          <a
+            href="contacto.html"
+            class="social-contact"
+            data-es="Contacte un agente"
+            data-en="Contact an agent"
+          >
+            Contacte un agente
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container cols">
+        <div>
+          <strong
+            data-es="Producir, comercializar y exportar"
+            data-en="Produce, market, and export"
+          >
+            Producir, comercializar y exportar
+          </strong>
+
+          <div
+            class="copy"
+            data-es="Un producto que cumpla estándares nacionales e internacionales mediante controles de procesos y valor agregado con apoyo de un personal competitivo."
+            data-en="A product that meets national and international standards through process controls and added value supported by a competitive staff."
+          >
+            Un producto que cumpla estándares nacionales e internacionales
+            mediante controles de procesos y valor agregado con apoyo de un
+            personal competitivo.
+          </div>
+
+          <div class="copy">
+            © <span id="year"></span>
+            <span data-es=" Tierra Azul 1981 S.A" data-en="Tierra Azul 1981 S.A">
+              Tierra Azul 1981 S.A
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <strong data-es="DIRECCIÓN" data-en="ADDRESS">DIRECCIÓN</strong>
+
+          <div class="copy">
+            <span
+              data-es="Ubicación: Pilas de Canjel, Puntarenas, Costa Rica."
+              data-en="Location: Pilas de Canjel, Puntarenas, Costa Rica."
+            >
+              Ubicación: Pilas de Canjel, Puntarenas, Costa Rica.
+            </span>
+            <br />
+            <span
+              data-es="Correo: waju@grupopenca.com"
+              data-en="Email: waju@grupopenca.com"
+            >
+              Correo: waju@grupopenca.com
+            </span>
+            <br />
+            <span
+              data-es="Teléfono: +506 45002389"
+              data-en="Phone: +506 45002389"
+            >
+              Teléfono: +506 45002389
+            </span>
+          </div>
+
+          <div class="copy">
+            <a href="documentos.html">
+              <span data-es="Documentos (PDF)" data-en="Documents (PDF)">
+                Documentos (PDF)
+              </span>
+            </a>
+            ·
+            <a href="contacto.html">
+              <span data-es="Contacto" data-en="Contact">
+                Contacto
+              </span>
+            </a>
+            ·
+            <a href="privacidad.html">
+              <span data-es="Política de Privacidad" data-en="Privacy Policy">
+                Política de Privacidad
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script defer src="js/header.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/ux.js"></script>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.AOS) AOS.init({ once: true });
+
+        // Swiper solo si existiera .heroSwiper
+        if (window.Swiper && document.querySelector(".heroSwiper")) {
+          new Swiper(".heroSwiper", {
+            loop: true,
+            speed: 900,
+            autoplay: {
+              delay: 3500,
+              disableOnInteraction: false,
+            },
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        }
+
+        // Año actual en el footer
+        const yearSpan = document.getElementById("year");
+        if (yearSpan) {
+          yearSpan.textContent = new Date().getFullYear();
+        }
+      });
+    </script>
+    <!-- 🔵 Traducción -->
+    <script defer src="js/translate.js"></script>
+  </body>
 </html>
