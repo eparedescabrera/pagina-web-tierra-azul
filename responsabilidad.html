@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pura Vida Melons - Responsabilidad Social</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper (slider pro, por si lo usas en otras páginas) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS (animaciones) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- CSS global -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- CSS específico de Responsabilidad Social -->
+    <link rel="stylesheet" href="css/responsabilidad.css" />
+  </head>
+
+  <body>
+    <!-- TOP BAR (gris oscuro con info) -->
+    <div class="topbar2">
+      <div class="container topbar2__wrap">
+        <div class="topbar2__item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span
+            data-es="Pilas de Cangel, Puntarenas, Costa Rica."
+            data-en="Pilas de Cangel, Puntarenas, Costa Rica."
+          >
+            Pilas de Cangel, Puntarenas, Costa Rica.
+          </span>
+        </div>
+
+        <div class="topbar2__right">
+          <a class="topbar2__item" href="mailto:info@puravidamelons.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span data-es="waju@grupopenca.com" data-en="waju@grupopenca.com">
+              waju@grupopenca.com
+            </span>
+          </a>
+          <a class="topbar2__item" href="tel:+50645002389">
+            <i class="fa-solid fa-phone"></i>
+            <span data-es="+506 45002389" data-en="+506 45002389">
+              +506 45002389
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER AMARILLO -->
+    <header class="header2" id="siteHeader">
+      <div class="container header2__wrap">
+        <a class="header2__brand" href="index.html" aria-label="Inicio">
+          <span class="brand-text">
+            <span class="brand-name">
+              <span class="brand-tierra">TIERRA</span>
+              <span class="brand-azul">AZUL</span>
+            </span>
+            <span class="brand-sub">1981 S.A</span>
+          </span>
+        </a>
+
+        <div class="header2__right">
+          <div class="header2__social">
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="#" aria-label="WhatsApp"
+              ><i class="fa-brands fa-square-whatsapp"></i
+            ></a>
+            <a href="#" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+
+          <!-- Botón hamburguesa (solo móvil) -->
+          <button
+            class="nav2__toggle"
+            id="navToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- NAV flotante centrado (desktop) -->
+      <div class="nav2" id="navBar">
+        <nav class="nav2__box" aria-label="Menú principal">
+          <a
+            class="nav2__link"
+            href="index.html"
+            data-es="Inicio"
+            data-en="Home"
+          >
+            Inicio
+          </a>
+
+          <div class="nav2__dropdown" id="dropNosotros">
+            <a
+              class="nav2__link nav2__dropbtn"
+              href="#"
+              data-es="Nosotros"
+              data-en="About us"
+            >
+              Nosotros <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <div class="nav2__submenu" id="subNosotros">
+              <a href="empresa.html" data-es="Empresa" data-en="Company">
+                Empresa
+              </a>
+              <a href="estrategia.html" data-es="Estrategia" data-en="Strategy">
+                Estrategia
+              </a>
+              <a href="calidad.html" data-es="Calidad" data-en="Quality">
+                Calidad
+              </a>
+            </div>
+          </div>
+
+          <a
+            class="nav2__link"
+            href="responsabilidad-social.html"
+            data-es="Responsabilidad Social"
+            data-en="Social Responsibility"
+          >
+            Responsabilidad Social
+          </a>
+          <a
+            class="nav2__link"
+            href="productos.html"
+            data-es="Productos"
+            data-en="Products"
+          >
+            Productos
+          </a>
+          <a
+            class="nav2__link"
+            href="noticias.html"
+            data-es="Noticias"
+            data-en="News"
+          >
+            Noticias
+          </a>
+          <a
+            class="nav2__link"
+            href="contacto.html"
+            data-es="Contacto"
+            data-en="Contact"
+          >
+            Contacto
+          </a>
+        </nav>
+      </div>
+
+      <!-- PANEL MÓVIL (overlay) -->
+      <div class="nav2__backdrop" id="navBackdrop"></div>
+
+      <aside class="nav2__panel" id="navPanel" aria-label="Menú móvil">
+        <div class="nav2__panelHead">
+          <span class="nav2__panelTitle" data-es="Menú" data-en="Menu">
+            Menú
+          </span>
+          <button class="nav2__close" id="navClose" aria-label="Cerrar menú">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="nav2__panelBody">
+          <a
+            class="nav2__mLink"
+            href="index.html"
+            data-es="Inicio"
+            data-en="Home"
+          >
+            Inicio
+          </a>
+
+          <!-- SOLO "NOSOTROS" TIENE SUBMENU EN MÓVIL -->
+          <button
+            class="nav2__mDrop"
+            type="button"
+            data-submenu="msubNosotros"
+            aria-expanded="false"
+          >
+            <span data-es="Nosotros" data-en="About us">Nosotros</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav2__mSub" id="msubNosotros">
+            <a href="empresa.html" data-es="Empresa" data-en="Company">
+              Empresa
+            </a>
+            <a href="estrategia.html" data-es="Estrategia" data-en="Strategy">
+              Estrategia
+            </a>
+            <a href="calidad.html" data-es="Calidad" data-en="Quality">
+              Calidad
+            </a>
+          </div>
+
+          <!-- LINKS NORMALES -->
+          <a
+            class="nav2__mLink"
+            href="responsabilidad-social.html"
+            data-es="Responsabilidad Social"
+            data-en="Social Responsibility"
+          >
+            Responsabilidad Social
+          </a>
+          <a
+            class="nav2__mLink"
+            href="productos.html"
+            data-es="Productos"
+            data-en="Products"
+          >
+            Productos
+          </a>
+          <a
+            class="nav2__mLink"
+            href="noticias.html"
+            data-es="Noticias"
+            data-en="News"
+          >
+            Noticias
+          </a>
+          <a
+            class="nav2__mLink"
+            href="contacto.html"
+            data-es="Contacto"
+            data-en="Contact"
+          >
+            Contacto
+          </a>
+        </div>
+      </aside>
+    </header>
+
+    <!-- Para que el contenido no se meta debajo del nav flotante -->
+    <div class="page-start"></div>
+
+    <!-- ================================
+         BANNER: VIDEO + CONTACTO
+    ================================= -->
+    <section class="rs-banner">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <!-- Video principal -->
+          <div class="col-lg-9">
+            <div
+              class="rs-banner__media"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <iframe
+                src="https://www.youtube.com/embed/DCc8yaQokik"
+                title="Video Responsabilidad Social"
+                loading="lazy"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Tarjeta de contacto -->
+          <div class="col-lg-3">
+            <aside
+              class="rs-contact"
+              data-aos="fade-left"
+              data-aos-duration="800"
+            >
+              <h2
+                class="rs-contact__title"
+                data-es="Contacto"
+                data-en="Contact"
+              >
+                Contacto
+              </h2>
+
+              <p
+                class="rs-contact__text"
+                data-es="Escríbanos por este medio, o también por correo electrónico o teléfono. Estamos para servirle y responder cualquier consulta relacionada con nuestra responsabilidad social."
+                data-en="Write to us here, or contact us by email or phone. We are here to answer any questions related to our social responsibility."
+              >
+                Escríbanos por este medio, o también por correo electrónico o
+                teléfono. Estamos para servirle y responder cualquier consulta
+                relacionada con nuestra responsabilidad social.
+              </p>
+
+              <a
+                href="contacto.html"
+                class="rs-contact__btn"
+                data-es="Ir a contacto"
+                data-en="Go to contact"
+              >
+                IR A CONTACTO
+              </a>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+         SECCIÓN PRINCIPAL: COMPROMISOS
+    ================================= -->
+    <section class="section rs-main">
+      <div class="container">
+        <div class="section-head">
+          <h2
+            class="section-title"
+            data-es="Responsabilidad Social"
+            data-en="Social Responsibility"
+          >
+            Responsabilidad Social
+          </h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <p
+          class="rs-main__intro"
+          data-es="En Tierra Azul 1981 S.A. entendemos la responsabilidad social como el compromiso de garantizar condiciones de trabajo justas, seguras y respetuosas, alineadas con principios internacionales y con un profundo respeto por los derechos humanos."
+          data-en="At Tierra Azul 1981 S.A we understand social responsibility as the commitment to guarantee fair, safe and respectful working conditions, aligned with international principles and with deep respect for human rights."
+        >
+          En Tierra Azul 1981 S.A. entendemos la responsabilidad social como el
+          compromiso de garantizar condiciones de trabajo justas, seguras y
+          respetuosas, alineadas con principios internacionales y con un profundo
+          respeto por los derechos humanos.
+        </p>
+
+        <div class="rs-commitments">
+          <h3
+            class="rs-commitments__title"
+            data-es="Nuestros compromisos"
+            data-en="Our commitments"
+          >
+            Nuestros compromisos
+          </h3>
+
+          <div class="rs-commitments__grid">
+            <!-- 1. Empleo libre -->
+            <article class="rs-card rs-card--tone1">
+              <div class="rs-card__icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h4 data-es="Empleo libre" data-en="Free employment">
+                Empleo libre
+              </h4>
+              <p
+                data-es="Relaciones laborales basadas en la voluntad de la persona trabajadora, sin coerción ni prácticas engañosas."
+                data-en="Employment relationships based on the worker’s free will, without coercion or deceptive practices."
+              >
+                Relaciones laborales basadas en la voluntad de la persona
+                trabajadora, sin coerción ni prácticas engañosas.
+              </p>
+            </article>
+
+            <!-- 2. Libertad de asociación -->
+            <article class="rs-card rs-card--tone2">
+              <div class="rs-card__icon">
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <h4
+                data-es="Libertad de asociación y negociación colectiva"
+                data-en="Freedom of association and collective bargaining"
+              >
+                Libertad de asociación y negociación colectiva
+              </h4>
+              <p
+                data-es="Respetamos el derecho de organización y el diálogo social como herramienta para mejorar las condiciones laborales."
+                data-en="We respect the right to organize and social dialogue as a tool to improve working conditions."
+              >
+                Respetamos el derecho de organización y el diálogo social como
+                herramienta para mejorar las condiciones laborales.
+              </p>
+            </article>
+
+            <!-- 3. Condiciones seguras -->
+            <article class="rs-card rs-card--tone3">
+              <div class="rs-card__icon">
+                <i class="fa-solid fa-helmet-safety"></i>
+              </div>
+              <h4
+                data-es="Condiciones de trabajo seguras e higiénicas"
+                data-en="Safe and hygienic working conditions"
+              >
+                Condiciones de trabajo seguras e higiénicas
+              </h4>
+              <p
+                data-es="Promovemos la prevención de riesgos y la cultura de seguridad ocupacional en todas las áreas."
+                data-en="We promote risk prevention and an occupational safety culture in all areas."
+              >
+                Promovemos la prevención de riesgos y la cultura de seguridad
+                ocupacional en todas las áreas.
+              </p>
+            </article>
+
+            <!-- 4. Salario digno -->
+            <article class="rs-card rs-card--tone2">
+              <div class="rs-card__icon">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+              </div>
+              <h4 data-es="Salario digno" data-en="Decent wage">
+                Salario digno
+              </h4>
+              <p
+                data-es="Velamos por una remuneración justa que reconozca el esfuerzo y compromiso de cada persona."
+                data-en="We ensure fair remuneration that recognizes each person’s effort and commitment."
+              >
+                Velamos por una remuneración justa que reconozca el esfuerzo y
+                compromiso de cada persona.
+              </p>
+            </article>
+
+            <!-- 5. Horas extra razonables -->
+            <article class="rs-card rs-card--tone3">
+              <div class="rs-card__icon">
+                <i class="fa-solid fa-user-clock"></i>
+              </div>
+              <h4
+                data-es="Horas extra no excesivas"
+                data-en="No excessive overtime"
+              >
+                Horas extra no excesivas
+              </h4>
+              <p
+                data-es="Gestionamos las jornadas para que las horas extra sean excepcionales y siempre bajo la normativa."
+                data-en="We manage working hours so overtime is exceptional and always under regulations."
+              >
+                Gestionamos las jornadas para que las horas extra sean
+                excepcionales y siempre bajo la normativa.
+              </p>
+            </article>
+
+            <!-- 6. Igualdad e inclusión -->
+            <article class="rs-card rs-card--tone1">
+              <div class="rs-card__icon">
+                <i class="fa-solid fa-venus-mars"></i>
+              </div>
+              <h4
+                data-es="Igualdad, diversidad e inclusión"
+                data-en="Equality, diversity and inclusion"
+              >
+                Igualdad, diversidad e inclusión
+              </h4>
+              <p
+                data-es="Fomentamos la igualdad de oportunidades, la diversidad y la inclusión de género."
+                data-en="We promote equal opportunities, diversity and gender inclusion."
+              >
+                Fomentamos la igualdad de oportunidades, la diversidad y la
+                inclusión de género.
+              </p>
+            </article>
+
+            <!-- 7. Cero acoso -->
+            <article class="rs-card rs-card--tone3">
+              <div class="rs-card__icon">
+                <i class="fa-solid fa-ban"></i>
+              </div>
+              <h4
+                data-es="No al acoso ni a la violencia"
+                data-en="No harassment or violence"
+              >
+                No al acoso ni a la violencia
+              </h4>
+              <p
+                data-es="No toleramos el acoso, ni la violencia sexual o laboral en ninguna de sus formas."
+                data-en="We do not tolerate harassment nor sexual or workplace violence in any form."
+              >
+                No toleramos el acoso, ni la violencia sexual o laboral en
+                ninguna de sus formas.
+              </p>
+            </article>
+
+            <!-- 8. Trabajo regular -->
+            <article class="rs-card rs-card--tone2">
+              <div class="rs-card__icon">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <h4 data-es="Trabajo regular" data-en="Regular employment">
+                Trabajo regular
+              </h4>
+              <p
+                data-es="Promovemos relaciones laborales estables y formales, con contratos claros y transparentes."
+                data-en="We promote stable and formal employment relationships with clear and transparent contracts."
+              >
+                Promovemos relaciones laborales estables y formales, con
+                contratos claros y transparentes.
+              </p>
+            </article>
+
+            <!-- 9. No trato inhumano -->
+            <article class="rs-card rs-card--tone1">
+              <div class="rs-card__icon">
+                <i class="fa-solid fa-scale-unbalanced"></i>
+              </div>
+              <h4
+                data-es="No al trato inhumano o severo"
+                data-en="No inhuman or severe treatment"
+              >
+                No al trato inhumano o severo
+              </h4>
+              <p
+                data-es="Rechazamos cualquier forma de castigo físico, trato degradante o intimidación."
+                data-en="We reject any form of physical punishment, degrading treatment or intimidation."
+              >
+                Rechazamos cualquier forma de castigo físico, trato degradante
+                o intimidación.
+              </p>
+            </article>
+
+            <!-- 10. No trabajo forzado -->
+            <article class="rs-card rs-card--tone3">
+              <div class="rs-card__icon">
+                <i class="fa-solid fa-hands-bound"></i>
+              </div>
+              <h4
+                data-es="No al trabajo forzado u obligatorio"
+                data-en="No forced or compulsory labor"
+              >
+                No al trabajo forzado u obligatorio
+              </h4>
+              <p
+                data-es="Rechazamos el trabajo forzado y cualquier práctica que atente contra la libertad de las personas."
+                data-en="We reject forced labor and any practice that threatens people’s freedom."
+              >
+                Rechazamos el trabajo forzado y cualquier práctica que atente
+                contra la libertad de las personas.
+              </p>
+            </article>
+
+            <!-- 11. Derechos humanos -->
+            <article class="rs-card rs-card--tone2">
+              <div class="rs-card__icon">
+                <i class="fa-solid fa-landmark"></i>
+              </div>
+              <h4
+                data-es="Respeto a los derechos humanos universales"
+                data-en="Respect for universal human rights"
+              >
+                Respeto a los derechos humanos universales
+              </h4>
+              <p
+                data-es="Nuestras decisiones y prácticas se alinean con el respeto a la dignidad y los derechos fundamentales de las personas."
+                data-en="Our decisions and practices are aligned with respect for human dignity and fundamental rights."
+              >
+                Nuestras decisiones y prácticas se alinean con el respeto a la
+                dignidad y los derechos fundamentales de las personas.
+              </p>
+            </article>
+
+            <!-- 12. Antisoborno / anticorrupción -->
+            <article class="rs-card rs-card--tone1">
+              <div class="rs-card__icon">
+                <i class="fa-solid fa-gavel"></i>
+              </div>
+              <h4
+                data-es="Antisoborno y anticorrupción"
+                data-en="Anti-bribery and anti-corruption"
+              >
+                Antisoborno y anticorrupción
+              </h4>
+              <p
+                data-es="Aplicamos una política de cero tolerancia al soborno, la corrupción, el lavado de activos y la financiación del terrorismo."
+                data-en="We apply a zero tolerance policy for bribery, corruption, money laundering and terrorism financing."
+              >
+                Aplicamos una política de cero tolerancia al soborno, la
+                corrupción, el lavado de activos y la financiación del
+                terrorismo.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO DE INTERÉS -->
+    <section class="info-interest">
+      <div class="container wrap">
+        <strong
+          data-es="Información de Interés"
+          data-en="Information of Interest"
+        >
+          Información de Interés
+        </strong>
+        <div class="social">
+          <a href="#" class="social-facebook" target="_blank">Facebook</a>
+          <a href="#" class="social-linkedin" target="_blank">LinkedIn</a>
+          <a href="#" class="social-youtube" target="_blank">YouTube</a>
+          <a
+            href="contacto.html"
+            class="social-contact"
+            data-es="Contacte un agente"
+            data-en="Contact an agent"
+          >
+            Contacte un agente
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container cols">
+        <div>
+          <strong
+            data-es="Producir, comercializar y exportar"
+            data-en="Produce, market, and export"
+          >
+            Producir, comercializar y exportar
+          </strong>
+
+          <div
+            class="copy"
+            data-es="Un producto que cumpla estándares nacionales e internacionales mediante controles de procesos y valor agregado con apoyo de un personal competitivo."
+            data-en="A product that meets national and international standards through process controls and added value supported by a competitive staff."
+          >
+            Un producto que cumpla estándares nacionales e internacionales
+            mediante controles de procesos y valor agregado con apoyo de un
+            personal competitivo.
+          </div>
+
+          <div class="copy">
+            © <span id="year"></span>
+            <span
+              data-es=" Tierra Azul 1981 S.A"
+              data-en="Tierra Azul 1981 S.A"
+            >
+              Tierra Azul 1981 S.A
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <strong data-es="DIRECCIÓN" data-en="ADDRESS">DIRECCIÓN</strong>
+
+          <div class="copy">
+            <span
+              data-es="Ubicación: Pilas de Canjel, Puntarenas, Costa Rica."
+              data-en="Location: Pilas de Canjel, Puntarenas, Costa Rica."
+            >
+              Ubicación: Pilas de Canjel, Puntarenas, Costa Rica.
+            </span>
+            <br />
+            <span
+              data-es="Correo: waju@grupopenca.com"
+              data-en="Email: waju@grupopenca.com"
+            >
+              Correo: waju@grupopenca.com
+            </span>
+            <br />
+            <span
+              data-es="Teléfono: +506 45002389"
+              data-en="Phone: +506 45002389"
+            >
+              Teléfono: +506 45002389
+            </span>
+          </div>
+
+          <div class="copy">
+            <a href="documentos.html">
+              <span data-es="Documentos (PDF)" data-en="Documents (PDF)">
+                Documentos (PDF)
+              </span>
+            </a>
+            ·
+            <a href="contacto.html">
+              <span data-es="Contacto" data-en="Contact"> Contacto </span>
+            </a>
+            ·
+            <a href="privacidad.html">
+              <span data-es="Política de Privacidad" data-en="Privacy Policy">
+                Política de Privacidad
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script defer src="js/header.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/ux.js"></script>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.AOS) AOS.init({ once: true });
+
+        // Swiper solo si existe .heroSwiper (para que no dé error en esta página)
+        if (window.Swiper && document.querySelector(".heroSwiper")) {
+          new Swiper(".heroSwiper", {
+            loop: true,
+            speed: 900,
+            autoplay: {
+              delay: 3500,
+              disableOnInteraction: false,
+            },
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        }
+
+        // Año actual en el footer
+        const yearSpan = document.getElementById("year");
+        if (yearSpan) {
+          yearSpan.textContent = new Date().getFullYear();
+        }
+      });
+    </script>
+    <!-- 🔵 Traducción -->
+    <script defer src="js/translate.js"></script>
+  </body>
+</html>
