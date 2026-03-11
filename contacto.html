@@ -275,11 +275,8 @@
               <div class="col-md-6">
                 <p>
                   <i class="fa-solid fa-envelope"></i>
-                  <span
-                    data-es="awu"
-                    data-en="waju@grupopenca.com"
-                  >
-                     waju@grupopenca.com
+                  <span data-es="awu" data-en="waju@grupopenca.com">
+                    waju@grupopenca.com
                   </span>
                 </p>
                 <p class="horario-static">
@@ -503,7 +500,7 @@
                     name="nombre"
                     required
                     pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s'.-]+$"
-                     maxlength="150"
+                    maxlength="150"
                     data-es-ph="Su nombre"
                     data-en-ph="Your name"
                   />
@@ -556,26 +553,27 @@
                   >
                     Asunto
                   </label>
-                <input
-  id="asunto"
-  type="text"
-  class="form-control"
-  name="asunto"
-  required
-  minlength="3"
-  maxlength="150"
-  pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s'.-]+$"
-  autocomplete="off"
-  data-es-ph="Asunto"
-  data-en-ph="Subject"
-/>
-<div
-  class="invalid-feedback"
-  data-es="Ingrese un asunto válido (solo letras y mínimo 3 caracteres)."
-  data-en="Enter a valid subject (letters only, at least 3 characters)."
->
-  Ingrese un asunto válido (solo letras y mínimo 3 caracteres).
-</div>
+                  <input
+                    id="asunto"
+                    type="text"
+                    class="form-control"
+                    name="asunto"
+                    required
+                    minlength="3"
+                    maxlength="150"
+                    pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s'.-]+$"
+                    autocomplete="off"
+                    data-es-ph="Asunto"
+                    data-en-ph="Subject"
+                  />
+                  <div
+                    class="invalid-feedback"
+                    data-es="Ingrese un asunto válido (solo letras y mínimo 3 caracteres)."
+                    data-en="Enter a valid subject (letters only, at least 3 characters)."
+                  >
+                    Ingrese un asunto válido (solo letras y mínimo 3
+                    caracteres).
+                  </div>
                 </div>
 
                 <!-- MENSAJE (OPCIONAL) -->
@@ -610,18 +608,29 @@
                 <div class="col-12">
                   <label
                     class="form-label"
+                    for="archivo"
                     data-es="Adjuntar documento (opcional)"
                     data-en="Attach document (optional)"
                   >
                     Adjuntar documento (opcional)
                   </label>
+
                   <input
                     type="file"
                     class="form-control"
                     name="archivo"
                     id="archivo"
-                    accept=".pdf"
+                    accept="application/pdf,.pdf"
                   />
+
+                  <div
+                    class="form-text"
+                    data-es="Solo PDF. Tamaño máximo recomendado: 5 MB."
+                    data-en="PDF only. Recommended max size: 5 MB."
+                  >
+                    Solo PDF. Tamaño máximo recomendado: 5 MB.
+                  </div>
+
                   <div
                     class="invalid-feedback"
                     data-es="Solo se permiten archivos PDF de hasta 5 MB."
@@ -695,7 +704,10 @@
           </div>
           <div class="copy">
             © <span id="year"></span>
-            <span data-es="Tierra Azul  1981 S.A" data-en="Tierra Azul  1981 S.A">
+            <span
+              data-es="Tierra Azul  1981 S.A"
+              data-en="Tierra Azul  1981 S.A"
+            >
               Tierra Azul
             </span>
           </div>
@@ -747,8 +759,14 @@
     </footer>
 
     <!-- JS LIBRERÍAS -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
