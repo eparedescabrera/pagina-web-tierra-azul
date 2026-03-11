@@ -14,7 +14,7 @@
   text-align: left;
   background:
     linear-gradient(120deg, rgba(15, 23, 42, .85), rgba(56, 189, 248, .45)),
-    url("../assets/privacidad-bg.jpg") center/cover no-repeat;
+    url("../assets/contact.webp") center/cover no-repeat;
 }
 
 /* Si no tienes privacidad-bg.jpg, puedes usar cualquier imagen
