@@ -92,7 +92,7 @@
   bottom: 0;
   width: 75px;
   height: 75px;
-  background: url("assets/badge.png") no-repeat center;
+  background: url("../assets/logogng.jpeg") no-repeat center;
   background-size: contain;
   pointer-events: none;  /* No afecta el clic */
   z-index: 3;
